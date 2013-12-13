@@ -1,37 +1,12 @@
-# Versioning of the ROM
+# Version information used on all builds
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
 
-ifdef BUILDTYPE_NIGHTLY
-	ROM_BUILDTYPE := NIGHTLY
-endif
-ifdef BUILDTYPE_AUTOTEST
-	ROM_BUILDTYPE := AUTOTEST
-endif
-ifdef BUILDTYPE_EXPERIMENTAL
-	ROM_BUILDTYPE := EXPERIMENTAL
-endif
-ifdef BUILDTYPE_RELEASE
-	ROM_BUILDTYPE := RELEASE
-endif
+DATE = $(shell vendor/du/tools/getdate)
 
-ifndef ROM_BUILDTYPE
-	ROM_BUILDTYPE := HOMEMADE
-endif
-
-TARGET_PRODUCT_SHORT := $(TARGET_PRODUCT)
-TARGET_PRODUCT_SHORT := $(subst omni_,,$(TARGET_PRODUCT_SHORT))
-
-# Build the final version string
-ifdef BUILDTYPE_RELEASE
-	ROM_VERSION := $(PLATFORM_VERSION)-$(TARGET_PRODUCT_SHORT)
+ifneq ($(DU_BUILD),)
+        PRODUCT_PROPERTY_OVERRIDES += \
+                ro.du.version=$(TARGET_PRODUCT)_$(DATE)
 else
-ifeq ($(ROM_BUILDTIME_LOCAL),y)
-	ROM_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d-%H%M%z)-$(TARGET_PRODUCT_SHORT)-$(ROM_BUILDTYPE)
-else
-	ROM_VERSION := $(PLATFORM_VERSION)-$(shell date -u +%Y%m%d)-$(TARGET_PRODUCT_SHORT)-$(ROM_BUILDTYPE)
+	PRODUCT_PROPERTY_OVERRIDES += \
+		ro.du.version=$(TARGET_PRODUCT)_$(DATE)
 endif
-endif
-
-# Apply it to build.prop
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.modversion=OmniROM-$(ROM_VERSION) \
-	ro.omni.version=$(ROM_VERSION)

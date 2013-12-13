@@ -1,4 +1,4 @@
-# Omni Extras
+# DU Extras
 
 on init
     export TERMINFO /system/etc/terminfo
