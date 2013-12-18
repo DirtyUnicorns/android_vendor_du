@@ -29,8 +29,21 @@ PRODUCT_COPY_FILES += \
 
 # init.d support
 PRODUCT_COPY_FILES += \
-	vendor/du/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
-	vendor/du/prebuilt/bin/sysinit:system/bin/sysinit
+        vendor/du/prebuilt/bin/sysinit:system/bin/sysinit \
+        vendor/du/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
+        vendor/du/prebuilt/etc/init.d/00check:system/etc/init.d/00check \
+        vendor/du/prebuilt/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
+        vendor/du/prebuilt/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
+        vendor/du/prebuilt/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+        vendor/du/prebuilt/etc/init.d/05freemem:system/etc/init.d/05freemem \
+        vendor/du/prebuilt/etc/init.d/06removecache:system/etc/init.d/06removecache \
+        vendor/du/prebuilt/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
+        vendor/du/prebuilt/etc/init.d/09cron:system/etc/init.d/09cron \
+        vendor/du/prebuilt/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
+        vendor/du/prebuilt/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+        vendor/du/prebuilt/etc/helpers.sh:system/etc/helpers.sh \
+        vendor/du/prebuilt/etc/sysctl.conf:system/etc/sysctl.conf \
+        vendor/du/prebuilt/etc/init.d.cfg:system/etc/init.d.cfg
 
 # userinit support
 PRODUCT_COPY_FILES += \
