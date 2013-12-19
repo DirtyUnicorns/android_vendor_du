@@ -74,4 +74,6 @@ PRODUCT_PACKAGES += \
     su
 
 PRODUCT_COPY_FILES += \
-    external/koush/Superuser/init.superuser.rc:root/init.superuser.rc
+    external/koush/Superuser/init.superuser.rc:root/init.superuser.rc \
+    vendor/du/proprietary/Term/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+
