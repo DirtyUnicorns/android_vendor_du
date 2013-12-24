@@ -13,7 +13,7 @@ PRODUCT_PACKAGES += \
 	DashClock \
 	DSPManager \
         DU_changelog \
-        DU_Stats \
+        DU_stats \
 	libcyanogen-dsp \
 	audio_effects.conf \
 	MonthCalendarWidget \
