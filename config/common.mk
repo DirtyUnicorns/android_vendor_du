@@ -76,4 +76,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     external/koush/Superuser/init.superuser.rc:root/init.superuser.rc \
     vendor/du/proprietary/Term/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+    
+#DUStats
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.romstats.url=http://stats.dirtyunicorns.com/ \
+ro.romstats.name=DirtyUnicorns \
+ro.romstats.version=testing \
+ro.romstats.tframe=3
 
