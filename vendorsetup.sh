@@ -3,3 +3,8 @@ add_lunch_combo du_hammerhead-userdebug
 add_lunch_combo du_m7att-userdebug
 add_lunch_combo du_m7ul-userdebug
 add_lunch_combo du_mako-userdebug
+add_lunch_combo du_exhilarate-userdebug
+add_lunch_combo du_t769-userdebug
+add_lunch_combo du_grouper-userdebug
+add_lunch_combo du_m7spr-userdebug
+
