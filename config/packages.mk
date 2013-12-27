@@ -11,6 +11,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	Apollo \
 	DashClock \
+	DirtWalls \
 	DSPManager \
         DU_changelog \
         DU_stats \
