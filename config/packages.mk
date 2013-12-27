@@ -11,10 +11,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	Apollo \
 	DashClock \
-	DirtWalls \
 	DSPManager \
         DU_changelog \
         DU_stats \
+        DU_walls \
 	libcyanogen-dsp \
 	audio_effects.conf \
 	MonthCalendarWidget \
