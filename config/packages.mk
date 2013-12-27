@@ -12,6 +12,7 @@ PRODUCT_PACKAGES += \
 	Apollo \
 	DashClock \
 	DSPManager \
+	DU_about \
         DU_changelog \
         DU_stats \
         DU_walls \
