@@ -66,6 +66,9 @@ PRODUCT_COPY_FILES += \
 # Add our overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 
+# T-Mobile Themes engine
+-include vendor/du/config/themes_common.mk
+
 # Koush Superuser
 SUPERUSER_EMBEDDED := true
 
