@@ -80,6 +80,11 @@ PRODUCT_COPY_FILES += \
     external/koush/Superuser/init.superuser.rc:root/init.superuser.rc \
     vendor/du/proprietary/Term/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
     
+# HFM Files
+PRODUCT_COPY_FILES += \
+	vendor/du/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
+	vendor/du/prebuilt/etc/hosts.og:system/etc/hosts.og
+
 #DUStats
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.romstats.url=http://stats.dirtyunicorns.com/ \
