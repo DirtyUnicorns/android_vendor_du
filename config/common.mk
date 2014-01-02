@@ -1,3 +1,4 @@
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
@@ -113,6 +114,11 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 # Boot Animation
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+
+# HFM Files
+PRODUCT_COPY_FILES += \
+        vendor/du/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
+        vendor/du/prebuilt/etc/hosts.og:system/etc/hosts.og
 
 # SuperSU
 PRODUCT_COPY_FILES += \
