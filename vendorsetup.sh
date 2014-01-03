@@ -8,4 +8,5 @@ add_lunch_combo du_m7att-userdebug
 add_lunch_combo du_m7spr-userdebug
 add_lunch_combo du_m7ul-userdebug
 add_lunch_combo du_mako-userdebug
+add_lunch_combo du_p3110-userdebug
 add_lunch_combo du_t769-userdebug
