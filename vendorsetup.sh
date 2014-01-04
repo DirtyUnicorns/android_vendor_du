@@ -10,3 +10,5 @@ add_lunch_combo du_m7ul-userdebug
 add_lunch_combo du_mako-userdebug
 add_lunch_combo du_p3110-userdebug
 add_lunch_combo du_t769-userdebug
+add_lunch_combo du_d710-userdebug
+add_lunch_combo du_toroplus-userdebug
