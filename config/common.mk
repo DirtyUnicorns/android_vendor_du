@@ -69,16 +69,15 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 # T-Mobile Themes engine
 -include vendor/du/config/themes_common.mk
 
-# Koush Superuser
-SUPERUSER_EMBEDDED := true
-
-PRODUCT_PACKAGES += \
-    Superuser \
-    su
-
 PRODUCT_COPY_FILES += \
-    external/koush/Superuser/init.superuser.rc:root/init.superuser.rc \
     vendor/du/proprietary/Term/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+
+# SU Support
+PRODUCT_COPY_FILES += \
+    vendor/du/prebuilt/bin/su:system/xbin/daemonsu \
+    vendor/du/prebuilt/bin/su:system/xbin/su \
+    vendor/du/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/du/prebuilt/apk/Superuser.apk:system/app/Superuser.apk
     
 #DUStats
 PRODUCT_PROPERTY_OVERRIDES += \
