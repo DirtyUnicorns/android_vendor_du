@@ -66,9 +66,6 @@ PRODUCT_COPY_FILES += \
 # Add our overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 
-# T-Mobile Themes engine
--include vendor/du/config/themes_common.mk
-
 PRODUCT_COPY_FILES += \
     vendor/du/proprietary/Term/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
