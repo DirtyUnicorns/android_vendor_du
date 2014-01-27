@@ -76,6 +76,11 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
     vendor/du/prebuilt/apk/Superuser.apk:system/app/Superuser.apk
     
+# HFM Files
+PRODUCT_COPY_FILES += \
+	vendor/du/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
+	vendor/du/prebuilt/etc/hosts.og:system/etc/hosts.og
+
 #DUStats
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.romstats.url=http://stats.dirtyunicorns.com/ \
