@@ -16,7 +16,6 @@ PRODUCT_PACKAGES += \
         DU_changelog \
         DU_stats \
         DU_walls \
-	DU_HFM \
 	libcyanogen-dsp \
 	audio_effects.conf \
 	MonthCalendarWidget \
