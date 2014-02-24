@@ -1,3 +1,10 @@
+add_lunch_combo du_d2att_userdebug
+add_lunch_combo du_d2cri_userdebug
+add_lunch_combo du_d2mtr_userdebug
+add_lunch_combo du_d2spr_userdebug
+add_lunch_combo du_d2tmo_userdebug
+add_lunch_combo du_d2usc_userdebug
+add_lunch_combo du_d2vzw_userdebug
 add_lunch_combo du_d710-userdebug
 add_lunch_combo du_deb-userdebug
 add_lunch_combo du_exhilarate-userdebug
