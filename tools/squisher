@@ -95,22 +95,6 @@ echo -e $CL_RED"Unpacking $OTAPACKAGE..."$CL_RST
 unzip $QUIET $OTAPACKAGE
 echo -e
 
-# Trim LatinIME.apk a bit
-zip -d  system/app/LatinIME.apk \
-	res/raw/main_cs.dict \
-	res/raw/main_da.dict \
-	res/raw/main_el.dict \
-	res/raw/main_fi.dict \
-	res/raw/main_hr.dict \
-	res/raw/main_hu.dict \
-	res/raw/main_iw.dict \
-	res/raw/main_ka.dict \
-	res/raw/main_nb.dict \
-	res/raw/main_nl.dict \
-	res/raw/main_pt_br.dict \
-	res/raw/main_pt_pt.dict \
-	res/raw/main_sv.dict
-
 # Move all apks to the same directory so xargs can
 # use also with framework-res.apk. This allow process
 # framework-res.apk in parallel with other apks
