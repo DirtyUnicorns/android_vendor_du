@@ -20,7 +20,8 @@ PRODUCT_PACKAGES += \
 	libcyanogen-dsp \
 	audio_effects.conf \
 	MonthCalendarWidget \
-        OmniSwitch
+        OmniSwitch \
+        Terminal
 
 PRODUCT_PACKAGES += \
 	CellBroadcastReceiver
