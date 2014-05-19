@@ -2,7 +2,12 @@
 #
 # 
 #
-if $speedy_modified
+
+. /system/etc/init.d.cfg
+. $script_helpers
+
+if [ "x$speedy_modified" = "xtrue" ];
+then
 rm -r /data/local/tmp/*
 rm -r /data/tmp/*
 rm -r /data/system/usagestats/*

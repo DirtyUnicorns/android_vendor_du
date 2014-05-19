@@ -1,5 +1,10 @@
 #!/system/bin/sh
-if $minfree
+
+. /system/etc/init.d.cfg
+. $script_helpers
+
+if [ "x$minfree" = "xtrue" ];
+then
 if [ -e /sys/module/lowmemorykiller/parameters/adj ]; then
 	echo "0,1,2,4,6,15" > /sys/module/lowmemorykiller/parameters/adj
 fi

@@ -1,5 +1,10 @@
 #!/system/bin/sh
-if $tweaks
+
+. /system/etc/init.d.cfg
+. $script_helpers
+
+if [ "x$tweaks" = "xtrue" ];
+then
 echo "0" > /proc/sys/vm/swappiness;
 
 echo "3" > /proc/sys/vm/page-cluster;

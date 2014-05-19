@@ -1,5 +1,10 @@
 #!/system/bin/sh
-if $gpurender
+
+. /system/etc/init.d.cfg
+. $script_helpers
+
+if [ "x$gpurender" = "xtrue" ];
+then
 sysrw
 rm /system/lib/egl/libGLES_android.so
 busybox sed -i '/0 0 android/d' /system/lib/egl/egl.cfg

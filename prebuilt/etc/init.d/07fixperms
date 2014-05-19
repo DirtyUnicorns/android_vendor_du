@@ -21,7 +21,7 @@
 . /system/etc/init.d.cfg
 . $script_helpers
 
-if $fix_permissions
+if [ "x$fix_permissions" = "xtrue" ];
 then
 	fix_permissions
 fi

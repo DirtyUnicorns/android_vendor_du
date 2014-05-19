@@ -1,5 +1,10 @@
 #!/system/bin/sh
-if $sqlite3
+
+. /system/etc/init.d.cfg
+. $script_helpers
+
+if [ "x$sqlite3" = "xtrue" ];
+then
 for i in \
 `busybox find /data -iname "*.db"`; 
 do \

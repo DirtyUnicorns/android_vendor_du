@@ -1,5 +1,10 @@
 #!/system/bin/sh
-if $journalism
+
+. /system/etc/init.d.cfg
+. $script_helpers
+
+if [ "x$journalism" = "xtrue" ];
+then
 tune2fs -o journal_data_writeback /block/path/to/system
 tune2fs -O ^has_journal /block/path/to/system
 tune2fs -o journal_data_writeback /block/path/to/cache

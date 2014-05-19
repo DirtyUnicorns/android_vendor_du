@@ -1,5 +1,10 @@
 #!/system/bin/sh
-if $iostats
+
+. /system/etc/init.d.cfg
+. $script_helpers
+
+if [ "x$iostats" = "xtrue" ];
+then
 if [ -e $i/queue/iostats ];
 	then
 		echo "0" > $i/queue/iostats;

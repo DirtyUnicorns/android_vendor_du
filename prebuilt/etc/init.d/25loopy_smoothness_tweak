@@ -1,5 +1,10 @@
 #!/system/bin/sh
-if $loopy_smooth
+
+. /system/etc/init.d.cfg
+. $script_helpers
+
+if [ "x$loopy_smooth" = "xtrue" ];
+then
 for n in 1 2
 do
 
