@@ -86,6 +86,9 @@ PRODUCT_COPY_FILES += \
 # Add our overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 
+# T-Mobile theme engine
+include vendor/du/configs/themes_common.mk
+
 # SU Support
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/bin/su:system/xbin/daemonsu \
