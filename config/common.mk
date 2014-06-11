@@ -77,6 +77,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
+# Installer
+PRODUCT_COPY_FILES += \
+    vendor/du/prebuilt/bin/persist.sh:install/bin/persist.sh \
+    vendor/du/prebuilt/etc/persist.conf:system/etc/persist.conf
+
 # Additional packages
 -include vendor/du/config/packages.mk
 
