@@ -107,6 +107,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.romstats.url=http://stats.dirtyunicorns.com/ \
 ro.romstats.name=DirtyUnicorns \
-ro.romstats.version=7.1 \
+ro.romstats.version=7.5 \
 ro.romstats.tframe=3
 
