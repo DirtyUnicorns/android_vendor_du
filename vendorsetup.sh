@@ -20,6 +20,7 @@ add_lunch_combo du_m4-userdebug
 add_lunch_combo du_m7att-userdebug
 add_lunch_combo du_m7spr-userdebug
 add_lunch_combo du_m7ul-userdebug
+add_lunch_combo du_m8-userdebug
 add_lunch_combo du_maguro-userdebug
 add_lunch_combo du_mako-userdebug
 add_lunch_combo du_manta-userdebug
