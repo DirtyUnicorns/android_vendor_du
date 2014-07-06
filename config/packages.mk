@@ -14,7 +14,6 @@ PRODUCT_PACKAGES += \
 	DSPManager \
 	DU_about \
         DU_changelog \
-        DU_stats \
         DU_walls \
 	libcyanogen-dsp \
 	audio_effects.conf \
