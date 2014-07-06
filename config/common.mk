@@ -100,11 +100,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
     vendor/du/prebuilt/etc/hosts.og:system/etc/hosts.og
-
-#DUStats
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.romstats.url=http://stats.dirtyunicorns.com/ \
-ro.romstats.name=DirtyUnicorns \
-ro.romstats.version=7.6 \
-ro.romstats.tframe=3
-
