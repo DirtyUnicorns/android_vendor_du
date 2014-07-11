@@ -1,9 +1,5 @@
 PRODUCT_BRAND ?= du
 
-# bootanimations
-PRODUCT_COPY_FILES += \
-	vendor/du/bootanimations/bootanimation.zip:system/media/bootanimation.zip
-
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google
