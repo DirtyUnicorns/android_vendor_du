@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 
 # T-Mobile theme engine
-include vendor/du/configs/themes_common.mk
+include vendor/du/config/themes_common.mk
 
 # SU Support
 PRODUCT_COPY_FILES += \
