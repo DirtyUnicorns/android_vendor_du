@@ -69,9 +69,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/etc/init.local.rc:root/init.du.rc
 
+# Boot Animation
+PRODUCT_COPY_FILES += \
+    vendor/du/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
+
 # Enable SIP and VoIP on all targets
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Additional packages
 -include vendor/du/config/packages.mk
