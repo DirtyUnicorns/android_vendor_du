@@ -1,4 +1,5 @@
 add_lunch_combo du_d2lte-userdebug
+add_lunch_combo du_d710-userdebug
 add_lunch_combo du_d800-userdebug
 add_lunch_combo du_d801-userdebug
 add_lunch_combo du_d802-userdebug
