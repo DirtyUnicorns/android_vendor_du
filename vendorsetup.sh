@@ -19,9 +19,8 @@ add_lunch_combo du_i605-userdebug
 add_lunch_combo du_jewel-userdebug
 add_lunch_combo du_ls980-userdebug
 add_lunch_combo du_m4-userdebug
-add_lunch_combo du_m7att-userdebug
+add_lunch_combo du_m7gsm-userdebug
 add_lunch_combo du_m7spr-userdebug
-add_lunch_combo du_m7ul-userdebug
 add_lunch_combo du_m8-userdebug
 add_lunch_combo du_maguro-userdebug
 add_lunch_combo du_mako-userdebug
