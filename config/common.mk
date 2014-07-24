@@ -100,3 +100,21 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
     vendor/du/prebuilt/etc/hosts.og:system/etc/hosts.og
+
+# Versioning System
+ANDROID_VERSION = 4.4.4
+DU_VERSION = v7.7
+
+ifndef DU_BUILD_TYPE
+    DU_BUILD_TYPE := UNOFFICIAL
+    PLATFORM_VERSION_CODENAME := UNOFFICIAL
+endif
+
+# Set all versions
+DU_VERSION := DU_$(DU_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d).$(DU_VERSION)-$(DU_BUILD_TYPE)
+DU_MOD_VERSION := DU_$(DU_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d).$(DU_VERSION)-$(DU_BUILD_TYPE)
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    BUILD_DISPLAY_ID=$(BUILD_ID) \
+    ro.du.version=$(DU_VERSION) \
+    ro.modversion=$(DU_MOD_VERSION) \
