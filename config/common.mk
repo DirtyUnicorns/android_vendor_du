@@ -95,6 +95,11 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/bin/su:system/xbin/su \
     vendor/du/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
     vendor/du/prebuilt/apk/Superuser.apk:system/app/Superuser.apk
+
+# CM Hardware Abstraction Framework
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
     
 # HFM Files
 PRODUCT_COPY_FILES += \
