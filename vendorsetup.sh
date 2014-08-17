@@ -26,6 +26,7 @@ add_lunch_combo du_m8-userdebug
 add_lunch_combo du_maguro-userdebug
 add_lunch_combo du_mako-userdebug
 add_lunch_combo du_manta-userdebug
+add_lunch_combo du_moto_msm8960dt-userdebug
 add_lunch_combo du_n1-userdebug
 add_lunch_combo du_n7000-userdebug
 add_lunch_combo du_p3100-userdebug
