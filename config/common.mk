@@ -100,7 +100,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
     org.cyanogenmod.hardware.xml
-    
+
 # HFM Files
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
@@ -108,7 +108,7 @@ PRODUCT_COPY_FILES += \
 
 # Versioning System
 ANDROID_VERSION = 4.4.4
-DU_VERSION = v7.8
+DU_VERSION = v7.9
 
 ifndef DU_BUILD_TYPE
     DU_BUILD_TYPE := UNOFFICIAL
