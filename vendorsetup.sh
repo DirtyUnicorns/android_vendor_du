@@ -5,7 +5,6 @@ add_lunch_combo du_d801-userdebug
 add_lunch_combo du_d802-userdebug
 add_lunch_combo du_d803-userdebug
 add_lunch_combo du_deb-userdebug
-add_lunch_combo du_exhilarate-userdebug
 add_lunch_combo du_find7-userdebug
 add_lunch_combo du_flo-userdebug
 add_lunch_combo du_gee-userdebug
@@ -31,13 +30,10 @@ add_lunch_combo du_n1-userdebug
 add_lunch_combo du_n7000-userdebug
 add_lunch_combo du_p3100-userdebug
 add_lunch_combo du_p3110-userdebug
-add_lunch_combo du_t769-userdebug
 add_lunch_combo du_t0lteatt-userdebug
 add_lunch_combo du_t0ltetmo-userdebug
 add_lunch_combo du_toro-userdebug
 add_lunch_combo du_toroplus-userdebug
-add_lunch_combo du_skyrocket-userdebug
 add_lunch_combo du_quincyatt-userdebug
-add_lunch_combo du_v500-userdebug
 add_lunch_combo du_vs980-userdebug
 add_lunch_combo du_yuga-userdebug
