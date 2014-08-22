@@ -34,6 +34,5 @@ add_lunch_combo du_t0lteatt-userdebug
 add_lunch_combo du_t0ltetmo-userdebug
 add_lunch_combo du_toro-userdebug
 add_lunch_combo du_toroplus-userdebug
-add_lunch_combo du_quincyatt-userdebug
 add_lunch_combo du_vs980-userdebug
 add_lunch_combo du_yuga-userdebug
