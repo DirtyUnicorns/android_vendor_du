@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/du/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/du/prebuilt/bin/50-hosts.sh:system/addon.d/50-hosts.sh \
+    vendor/du/prebuilt/bin/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/du/prebuilt/bin/blacklist:system/addon.d/blacklist
 
 # init.d support
