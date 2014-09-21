@@ -5,6 +5,7 @@ add_lunch_combo du_d801-userdebug
 add_lunch_combo du_d802-userdebug
 add_lunch_combo du_d803-userdebug
 add_lunch_combo du_deb-userdebug
+add_lunch_combo du_falcon-userdebug
 add_lunch_combo du_find7-userdebug
 add_lunch_combo du_flo-userdebug
 add_lunch_combo du_gee-userdebug
