@@ -1241,6 +1241,7 @@
   <apn carrier="Beeline UZ" mcc="434" mnc="04" apn="internet.beeline.uz" user="beeline" password="beeline" type="default,supl" />
   <apn carrier="Beeline UZ MMS" mcc="434" mnc="04" apn="mms.beeline.uz" user="beeline" password="beeline" mmsc="http://mms" mmsproxy="172.30.30.166" mmsport="8080" type="mms" />
   <apn carrier="IIJmio" mcc="440" mnc="10" apn="iijmio.jp" user="mio@iij" server="" password="iij" authtype="3" mmsc="" />
+  <apn carrier="em.std" mcc="440" mnc="00" apn="em.std" user="em" password="em" type="default,supl" bearer="14"/>
   <apn carrier="b-mobile 1GB/Fair" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@fr" password="bmobile" authtype="3" />
   <apn carrier="b-mobile 6ヶ月/スマートSIM" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@4g" password="bmobile" authtype="3" />
   <apn carrier="b-mobile U300" mcc="440" mnc="10" apn="bmobile.ne.jp" user="bmobile@u300" password="bmobile" authtype="3" />
