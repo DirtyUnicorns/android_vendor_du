@@ -20,6 +20,10 @@
 <!-- use empty string to specify no proxy or port -->
 <!-- This version must agree with that in apps/common/res/apns.xml -->
 <apns version="8">
+  <apn carrier="Boost" mcc="310" mnc="120" apn="cinet.spcs" type="default,supl,mms,dun,fota" mmsc="http://mm.myboostmobile.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+  <apn carrier="Boost Mobile" mcc="311" mnc="870" apn="n.boost.ispsn" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mm.myboostmobile.com" type="default,supl,mms,fota,dun" carrier_enabled="false" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
+  <apn carrier="Boost MMS" mcc="505" mnc="02" apn="mms" user="" password="" server="" proxy="61.88.190.10" port="8070" mmsc="http://mmsc.optus.com.au:8002/" mmsproxy="61.88.190.10" mmsport="8070" type="mms" authtype="3"/>
+  <apn carrier="Boost Mobile" mcc="505" mnc="02" apn="yesinternet" user="" password="" server="" proxy="" port="" mmsc="" mmsproxy="" mmsport="" type="default,supl" authtype="3"/>
   <apn carrier="Test Internet" mcc="001" mnc="01" apn="VZWINTERNET" type="default,dun,supl" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Test FOTA" mcc="001" mnc="01" apn="VZWADMIN" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Test IMS" mcc="001" mnc="01" apn="VZWIMS" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" />
@@ -664,7 +668,6 @@
   <apn carrier="Sprint EHRPD ota" mcc="310" mnc="120" apn="otasn" type="fota" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
   <apn carrier="Sprint LTE internet" mcc="310" mnc="120" apn="n.ispsn" type="default,mms,supl,hipri" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
   <apn carrier="Sprint EHRPD internet" mcc="310" mnc="120" apn="n.ispsn" type="default,mms,supl,hipri" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
-  <apn carrier="Boost" mcc="310" mnc="120" apn="cinet.spcs" type="default,supl,mms,dun,fota" mmsc="http://mm.myboostmobile.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Credo Mobile" mcc="310" mnc="120" apn="n.w1.ispsn" type="default,mms" mmsc="http://mms.plspictures.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="Ting" mcc="310" mnc="120" apn="n.t8.ispsn" type="default,mms" mmsc="http://mms.plspictures.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
   <apn carrier="FreedomPop" mcc="310" mnc="120" apn="n.f6.ispsn" type="default,mms" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
@@ -782,7 +785,6 @@
   <apn carrier="LTE - USCC INTERNET" mcc="311" mnc="580" apn="usccinternet" type="default,dun,mms,fota" mmsc="http://mmsc1.uscc.net/mmsc/MMS" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
   <apn carrier="MetroPCS DEFAULT" mcc="311" mnc="660" apn="internet.metropcs" user="" password="" type="default,hipri,admin,mms" authtype="0" mmsc="http://mms.metropcs.net:3128/mmsc" protocol="IP" roaming_protocol="IP" bearer="14" inactivity_timer="7080" />
   <apn carrier="MetroPCS IMS"  mcc="311" mnc="660" apn="ims.metropcs" user="" password="" type="ims" authtype="0" mmsc="http://mms.metropcs.net:3128/mmsc" protocol="IP" roaming_protocol="IP" bearer="14" inactivity_timer="7080" />
-  <apn carrier="Boost Mobile CdmaNai" mcc="311" mnc="870" apn="CdmaNai" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mm.myboostmobile.com" type="mms" carrier_enabled="false" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="6" />
   <apn carrier="Sprint CdmaNai" mcc="312" mnc="530" apn="CdmaNai" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mms.sprintpcs.com" type="mms" carrier_enabled="false" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="6" />
   <apn carrier="Claro PR" mcc="330" mnc="110" apn="internet.claropr.com" port="8080" type="default,supl" />
   <apn carrier="Claro PR MMS" mcc="330" mnc="110" apn="mms.claropr.com" mmsc="http://mmsg.claropr.com:1021/mmsc" mmsproxy="10.50.38.3" mmsport="8799" type="mms" />
@@ -1405,8 +1407,6 @@
   <apn carrier="Virgin AU MMS" mcc="505" mnc="02" apn="virginmms" user="*" password="*" server="*" proxy="202.139.083.152" port="8070" mmsc="http://mms.virginvibe.com.au:8002/" mmsproxy="202.139.083.152" mmsport="8070" type="mms" />
   <apn carrier="Optus Internet" mcc="505" mnc="02" apn="yesinternet" user="*" password="*" server="*" type="default,supl" />
   <apn carrier="Apex Telecom" mcc="505" mnc="02" apn="splns357" user="" password="" mmsc="" mmsproxy="" mmsport="" type="default,supl" />
-  <apn carrier="Boost MMS" mcc="505" mnc="02" apn="mms" user="" password="" server="" proxy="61.88.190.10" port="8070" mmsc="http://mmsc.optus.com.au:8002/" mmsproxy="61.88.190.10" mmsport="8070" type="mms" authtype="3"/>
-  <apn carrier="Boost Mobile" mcc="505" mnc="02" apn="yesinternet" user="" password="" server="" proxy="" port="" mmsc="" mmsproxy="" mmsport="" type="default,supl" authtype="3"/>
   <apn carrier="Vodafone AU" mcc="505" mnc="03" apn="live.vodafone.com" user="*" password="*" server="*" mmsc="http://pxt.vodafone.net.au/pxtsend" mmsproxy="10.202.2.60" mmsport="8080" type="mms,default,supl" />
   <apn carrier="3 AU" mcc="505" mnc="06" apn="3services" mmsc="http://mmsc.three.net.au:10021/mmsc" mmsproxy="10.176.57.25" mmsport="8799" type="default,supl,mms"/>
   <apn carrier="VF AU PXT" mcc="505" mnc="07" apn="live.vodafone.com" mmsc="http://pxt.vodafone.net.au/pxtsend" mmsproxy="10.202.2.60" mmsport="8080" type="mms" />

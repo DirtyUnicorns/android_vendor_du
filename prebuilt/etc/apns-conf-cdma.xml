@@ -25,6 +25,8 @@
     <apn carrier="Cellular South" mcc="310" mnc="023" apn="internet" mmsc="http://pix.cellularsouth.com/servlets/mms" authtype="3" port="" mmsport="" type="mms" />
     <apn carrier="MetroPCS" mcc="310" mnc="027" apn="wap.metropcs.net" user="MDN@mymetropcs.com" password="metropcs" server="http://mms.metropcs.net/servlets/mmsc" mmsc="http://mms.metropcs.net/mmsc" mmsport="3128" type="default,supl,mms" />
     <apn carrier="Virgin Mobile US" mcc="311" mnc="490" apn="0" mmsproxy="205.239.233.136" mmsport="81" mmsc="http://mmsc.vmobl.com:8088/mms?" port="" type="mms" />
+    <apn carrier="Boost" mcc="310" mnc="120" apn="cinet.spcs" type="default,supl,mms,dun,fota" mmsc="http://mm.myboostmobile.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" />
+    <apn carrier="Boost Mobile" mcc="311" mnc="870" apn="n.boost.ispsn" mmsproxy="68.28.31.7" mmsport="80" mmsc="http://mm.myboostmobile.com" type="default,supl,mms,fota,dun" carrier_enabled="false" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="13" />
     <apn carrier="Boost MMS" mcc="505" mnc="02" apn="mms" user="" password="" server="" proxy="61.88.190.10" port="8070" mmsc="http://mmsc.optus.com.au:8002/" mmsproxy="61.88.190.10" mmsport="8070" type="mms" authtype="3"/>
     <apn carrier="Boost Mobile" mcc="505" mnc="02" apn="yesinternet" user="" password="" server="" proxy="" port="" mmsc="" mmsproxy="" mmsport="" type="default,supl" authtype="3"/>
 
