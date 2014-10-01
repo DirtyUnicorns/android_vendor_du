@@ -12,6 +12,9 @@ add_lunch_combo du_gee-userdebug
 add_lunch_combo du_grouper-userdebug
 add_lunch_combo du_hammerhead-userdebug
 add_lunch_combo du_hlte-userdebug
+add_lunch_combo du_hltespr-userdebug
+add_lunch_combo du_hltevzw-userdebug
+add_lunch_combo du_hlteusc-userdebug
 add_lunch_combo du_jflte-userdebug
 add_lunch_combo du_i9100-userdebug
 add_lunch_combo du_i9300-userdebug
