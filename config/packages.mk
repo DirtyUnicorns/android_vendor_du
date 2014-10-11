@@ -39,5 +39,8 @@ PRODUCT_PACKAGES += \
 	lsof \
 	mount.exfat \
 	fsck.exfat \
-	mkfs.exfat
+	mkfs.exfat \
+        mkfs.f2fs \
+        fsck.f2fs \
+        fibmap.f2fs
 
