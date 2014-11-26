@@ -8,6 +8,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
+PRODUCT_COPY_FILES += \
+    vendor/du/prebuilt/bin/sysinit:system/bin/sysinit \
+    vendor/du/prebuilt/etc/init.du.rc:root/init.du.rc
+
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     dalvik.vm.debug.alloc=0 \
