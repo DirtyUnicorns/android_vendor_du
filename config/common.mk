@@ -104,6 +104,11 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/du/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/du/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
 # Versioning System
 ANDROID_VERSION = 5.0.1
 DU_VERSION = v9.0
