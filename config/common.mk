@@ -100,6 +100,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 
+# Boot Animation
+PRODUCT_COPY_FILES += \
+    vendor/du/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+
 # Versioning System
 ANDROID_VERSION = 5.0.1
 DU_VERSION = v9.0
