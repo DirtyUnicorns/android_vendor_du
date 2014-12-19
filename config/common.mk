@@ -83,8 +83,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
-    DashClock \
-    DU-Tweaks
+    DashClock
 
 # Extra tools
 PRODUCT_PACKAGES += \
