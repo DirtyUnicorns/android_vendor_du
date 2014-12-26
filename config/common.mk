@@ -119,7 +119,7 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # Versioning System
-ANDROID_VERSION = 5.0.1
+ANDROID_VERSION = 5.0.2
 DU_VERSION = v9.0
 
 ifndef DU_BUILD_TYPE
