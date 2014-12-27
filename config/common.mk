@@ -83,7 +83,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
-    DashClock
+    DashClock \
+    OmniSwitch
 
 # Extra tools
 PRODUCT_PACKAGES += \
