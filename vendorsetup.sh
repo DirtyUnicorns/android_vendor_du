@@ -1,1 +1,2 @@
+add_lunch_combo du_falcon-userdebug
 add_lunch_combo du_m7-userdebug
