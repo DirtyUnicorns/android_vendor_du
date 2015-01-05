@@ -69,6 +69,9 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
     vendor/du/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# Theme engine
+include vendor/du/config/themes_common.mk
+
 # Required packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
