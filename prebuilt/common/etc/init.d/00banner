@@ -1,0 +1,7 @@
+#!/system/bin/sh
+#
+# Print startup info
+#
+L="log -p i -t du"
+
+$L "Welcome to Android `getprop ro.build.version.release` / DirtyUnicorns `getprop ro.du.version`";

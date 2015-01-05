@@ -1,17 +1,28 @@
 #
 # This policy configuration will be used by all products that
-# inherit from DU
+# inherit from CM
 #
 
 BOARD_SEPOLICY_DIRS += \
     vendor/du/sepolicy
 
 BOARD_SEPOLICY_UNION += \
-    file_contexts \
     file.te \
+    file_contexts \
     genfs_contexts \
+    property_contexts \
+    seapp_contexts \
+    auditd.te \
+    healthd.te \
+    hostapd.te \
     installd.te \
     netd.te \
+    property.te \
+    recovery.te \
+    shell.te \
+    su.te \
+    sysinit.te \
+    system.te \
     ueventd.te \
-    mac_permissions.xml \
-	vold.te
+    vold.te \
+    mac_permissions.xml
