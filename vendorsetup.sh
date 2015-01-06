@@ -1,2 +1,3 @@
 add_lunch_combo du_falcon-userdebug
 add_lunch_combo du_m7-userdebug
+add_lunch_combo du_moto_msm8960-userdebug
