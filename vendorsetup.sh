@@ -1,3 +1,4 @@
+add_lunch_combo du_d850-userdebug
 add_lunch_combo du_falcon-userdebug
 add_lunch_combo du_hlte-userdebug
 add_lunch_combo du_hltespr-userdebug
