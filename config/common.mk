@@ -9,6 +9,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
+# default sounds
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.config.alarm_alert=Argon.ogg \
+    ro.config.ringtone=Orion.ogg \
+    ro.config.notification_sound=pixiedust.ogg
+
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
