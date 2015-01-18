@@ -90,7 +90,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt \
-    DashClock \
+    CalendarWidget \
     OmniSwitch
 
 # Extra tools
