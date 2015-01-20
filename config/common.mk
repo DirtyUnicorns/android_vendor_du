@@ -83,11 +83,15 @@ PRODUCT_PACKAGES += \
     Basic \
     PhaseBeam
 
+ifeq ($(FLOUNDER_NO_DSP),)
 # DSPManager
 PRODUCT_PACKAGES += \
-    DSPManager \
-    libcyanogen-dsp \
-    audio_effects.conf
+else
+PRODUCT_PACKAGES += \
+   DSPManager \
+   libcyanogen-dsp \
+   audio_effects.conf
+endif
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
