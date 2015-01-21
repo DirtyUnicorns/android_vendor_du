@@ -91,6 +91,7 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
+    DU-About \
     LatinIME \
     BluetoothExt \
     CalendarWidget \
