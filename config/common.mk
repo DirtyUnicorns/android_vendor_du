@@ -95,6 +95,7 @@ endif
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
+    DU-About \
     LatinIME \
     BluetoothExt \
     CalendarWidget \
