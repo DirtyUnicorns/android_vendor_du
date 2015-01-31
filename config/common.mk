@@ -82,9 +82,14 @@ include vendor/du/config/packages.mk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 
-# Boot Animation
+# use specific resolution for bootanimation
+ifneq ($(SMALL_BOOTANIMATION_SIZE),)
+PRODUCT_COPY_FILES += \
+    vendor/du/prebuilt/common/media/res/$(SMALL_BOOTANIMATION_SIZE).zip:system/media/bootanimation.zip
+else
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+endif
 
 # SuperSU
 PRODUCT_COPY_FILES += \
