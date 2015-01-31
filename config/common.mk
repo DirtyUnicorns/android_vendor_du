@@ -95,6 +95,7 @@ endif
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
+    Apollo \
     DU-About \
     LatinIME \
     BluetoothExt \
