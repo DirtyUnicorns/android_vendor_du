@@ -142,7 +142,7 @@ PRODUCT_COPY_FILES += \
 
 # Versioning System
 ANDROID_VERSION = 5.0.2
-DU_VERSION = v9.0
+DU_VERSION = v9.1
 
 ifndef DU_BUILD_TYPE
     DU_BUILD_TYPE := UNOFFICIAL
@@ -156,4 +156,4 @@ DU_MOD_VERSION := DU_$(DU_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d-%H%M
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.du.version=$(DU_VERSION) \
-    ro.mod.version=$(DU_BUILD_TYPE)-v9.0 \
+    ro.mod.version=$(DU_BUILD_TYPE)-v9.1 \
