@@ -12,13 +12,9 @@ PRODUCT_PACKAGES += \
 	Apollo \
 	DashClock \
 	DSPManager \
-	DU_about \
-        DU_changelog \
-        DU_notepad \
-        DU_walls \
+        DU-Changelog \
 	libcyanogen-dsp \
 	audio_effects.conf \
-	MonthCalendarWidget \
         OmniSwitch \
         Terminal
 
