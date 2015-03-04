@@ -97,6 +97,7 @@ endif
 PRODUCT_PACKAGES += \
     Apollo \
     DU-About \
+    DU-Updater \
     LatinIME \
     BluetoothExt \
     CalendarWidget \
