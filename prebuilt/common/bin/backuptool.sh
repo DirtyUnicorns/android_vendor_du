@@ -7,6 +7,8 @@ export C=/tmp/backupdir
 export S=/system
 export V=DU-9.1
 
+export LCDDENSITY="ro.sf.lcd_density"
+
 # Preserve /system/addon.d in /tmp/addon.d
 preserve_addon_d() {
   mkdir -p /tmp/addon.d/
@@ -67,6 +69,7 @@ done
 
 case "$1" in
   backup)
+    grep $LCDDENSITY /system/build.prop > /tmp/du_dpi
     mkdir -p $C
     if check_prereq; then
         if check_whitelist system; then
@@ -80,6 +83,14 @@ case "$1" in
     run_stage post-backup
   ;;
   restore)
+    DUDPI=`cat /tmp/du_dpi`
+    if [ "${DUDPI/$LCDDENSITY}" != "$DUDPI" ]
+    then
+        mv /system/build.prop /system/build.prop.new
+        sed "s/ro\.sf\.lcd_density=.*/$DUDPI/g" /system/build.prop.new > /system/build.prop
+        chmod 644 /system/build.prop
+        rm -f /system/build.prop.new
+    fi
     if check_prereq; then
         if check_whitelist tmp; then
             exit 127
