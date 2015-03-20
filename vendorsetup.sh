@@ -1,3 +1,4 @@
+add_lunch_combo du_bacon-userdebug
 add_lunch_combo du_d850-userdebug
 add_lunch_combo du_d851-userdebug
 add_lunch_combo du_d852-userdebug
