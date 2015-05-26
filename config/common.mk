@@ -27,6 +27,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
+# Allow override of system DUN settings
+# 2 = not set, 0 = DUN not required, 1 = DUN required
+PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
+
 # Disable excessive dalvik debug messages
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
