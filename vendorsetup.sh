@@ -20,3 +20,4 @@ add_lunch_combo du_m7spr-userdebug
 add_lunch_combo du_m7vzw-userdebug
 add_lunch_combo du_m8-userdebug
 add_lunch_combo du_vs985-userdebug
+add_lunch_combo du_xt926-userdebug
