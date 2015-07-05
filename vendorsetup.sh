@@ -7,7 +7,10 @@ add_lunch_combo du_hltetmo-userdebug
 add_lunch_combo du_hltevzw-userdebug
 add_lunch_combo du_jewel-userdebug
 add_lunch_combo du_jflteatt-userdebug
+add_lunch_combo du_jfltecan-userdebug
+add_lunch_combo du_jfltespr-userdebug
 add_lunch_combo du_jfltetmo-userdebug
+add_lunch_combo du_jflteusc-userdebug
 add_lunch_combo du_jfltevzw-userdebug
 add_lunch_combo du_jfltexx-userdebug
 add_lunch_combo du_klte-userdebug
