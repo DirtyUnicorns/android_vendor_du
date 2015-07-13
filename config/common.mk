@@ -130,9 +130,15 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 
+ifeq ($(ZARACL_BOOTANIMATION),)
+# Boot Animation
+PRODUCT_COPY_FILES += \
+    vendor/du/prebuilt/common/media/zaracl_bootanimation.zip:system/media/bootanimation.zip
+else
 # Boot Animation
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+endif
 
 # HFM Files
 PRODUCT_COPY_FILES += \
