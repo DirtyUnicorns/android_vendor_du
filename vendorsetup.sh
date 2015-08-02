@@ -1,4 +1,5 @@
 add_lunch_combo du_bacon-userdebug
+add_lunch_combo du_cancro-userdebug
 add_lunch_combo du_falcon-userdebug
 add_lunch_combo du_find7-userdebug
 add_lunch_combo du_hlte-userdebug
