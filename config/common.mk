@@ -97,7 +97,6 @@ endif
 PRODUCT_PACKAGES += \
     Apollo \
     DU-About \
-    DU-Updater \
     LatinIME \
     BluetoothExt \
     CalendarWidget \
@@ -158,3 +157,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.du.version=$(DU_VERSION) \
     ro.mod.version=$(DU_BUILD_TYPE)-v9.5 \
+
+#Build DU-Updater only if DU_BUILD_TYPE isn't UNOFFICIAL
+ifneq ($(DU_BUILD_TYPE),UNOFFICIAL)
+PRODUCT_PACKAGES += \
+    DU-Updater
+endif
