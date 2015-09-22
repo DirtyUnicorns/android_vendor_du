@@ -5,7 +5,7 @@
 
 export C=/tmp/backupdir
 export S=/system
-export V=v9.6
+export V=v9.7
 
 export LCDDENSITY="ro.sf.lcd_density"
 
