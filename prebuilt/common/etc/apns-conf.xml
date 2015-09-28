@@ -615,7 +615,7 @@
   <apn carrier="Videotron" mcc="302" mnc="500" apn="media.ng" mmsc="http://media.videotron.com/" type="default,supl,mms" />
   <apn carrier="Bell" mcc="302" mnc="610" apn="pda.bell.ca" proxy="web.wireless.bell.ca" port="80" mmsc="http://mms.bell.ca/mms/wapenc" mmsproxy="web.wireless.bell.ca" mmsport="80" type="" />
   <apn carrier="Bell Flex" mcc="302" mnc="610" apn="inet.bell.ca" mmsc="http://mms.bell.ca/mms/wapenc" type="default,supl,mms" />
-  <apn carrier="Rogers LTE" mcc="302" mnc="720" apn="ltemobile.apn" mmsc="http://mms.gprs.rogers.com" mmsproxy="10.128.1.69" mmsport="80" type="default,supl,mms"/>
+  <apn carrier="Rogers LTE" mcc="302" mnc="720" apn="ltemobile.apn" mmsc="http://mms.gprs.rogers.com" mmsproxy="10.128.1.69" mmsport="80" mvno_type="spn" mvno_match_data="ROGERS" type="default,supl,mms"/>
   <apn carrier="Rogers Tethering" mcc="302" mnc="720" apn="ltedata.apn" type="dun" mvno_match_data="ROGERS" mvno_type="spn" protocol="IPV4V6" roaming_protocol="IP" />
   <apn carrier="Rogers" mcc="302" mnc="720" apn="rogers-core-appl1.apn" proxy="" port="" user="" password="" server="" mmsc="http://mms.gprs.rogers.com" mmsproxy="10.128.1.69" mmsport="80" mvno_type="" mvno_match_data="" spn="" type="default,supl,mms" />
   <apn carrier="Rogers Tethering" mcc="302" mnc="720" apn="isp.apn" proxy="" port="" user="" password="" server="" mmsc="" mmsproxy="" mmsport="" mvno_type="" mvno_match_data="" spn="" type="default,supl" />
