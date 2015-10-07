@@ -142,8 +142,8 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # Versioning System
-ANDROID_VERSION = 5.1.1
-DU_VERSION = v9.7
+ANDROID_VERSION = 6.0
+DU_VERSION = v10.0
 ifndef DU_BUILD_TYPE
     DU_BUILD_TYPE := DIRTY-DEEDS
     PLATFORM_VERSION_CODENAME := DIRTY-DEEDS
