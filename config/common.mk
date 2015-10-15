@@ -85,7 +85,8 @@ PRODUCT_PACKAGES += \
 # Optional packages
 PRODUCT_PACKAGES += \
     Basic \
-    PhaseBeam
+    PhaseBeam \
+    Chromium
 
 ifeq ($(FLOUNDER_NO_DSP),)
 # DSPManager
