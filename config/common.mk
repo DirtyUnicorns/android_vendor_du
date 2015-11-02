@@ -80,6 +80,7 @@ include vendor/du/config/themes_common.mk
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     Development \
+    messaging \
     SpareParts
 
 # Optional packages
@@ -159,7 +160,7 @@ DU_MOD_VERSION := DU_$(DU_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d-%H%M
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.du.version=$(DU_VERSION) \
-    ro.mod.version=$(DU_BUILD_TYPE)-v9.7 \
+    ro.mod.version=$(DU_BUILD_TYPE)-v10.0 \
 
 #Build DU-Updater only if DU_BUILD_TYPE isn't DIRTY-DEEDS
 ifneq ($(DU_BUILD_TYPE),DIRTY-DEEDS)
