@@ -1,3 +1,4 @@
+add_lunch_combo du_bullhead-userdebug
 add_lunch_combo du_flo-userdebug
 add_lunch_combo du_flounder-userdebug
 add_lunch_combo du_grouper-userdebug
