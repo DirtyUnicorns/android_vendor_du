@@ -80,7 +80,6 @@ include vendor/du/config/themes_common.mk
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     Development \
-    messaging \
     SpareParts
 
 # Optional packages
