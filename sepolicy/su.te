@@ -1,11 +1,11 @@
-type superuser_device, file_type;
+type superuser_device, file_type, mlstrustedobject;
 
 ## Perms for the daemon
 
-type sudaemon, domain;
-
 userdebug_or_eng(`
   domain_trans(init, su_exec, sudaemon)
+
+  typeattribute sudaemon domain, mlstrustedsubject;
 
   type_transition sudaemon socket_device:sock_file superuser_device;
   # The userspace app uses /dev sockets to control per-app access
@@ -41,6 +41,7 @@ userdebug_or_eng(`
   dontaudit sudaemon domain:peer *;
   dontaudit sudaemon domain:binder *;
   dontaudit sudaemon property_type:property_service *;
+  dontaudit sudaemon appops_service:service_manager *;
 ')
 
 ## Perms for the app
