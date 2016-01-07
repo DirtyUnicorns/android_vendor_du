@@ -1,5 +1,6 @@
 add_lunch_combo du_bacon-userdebug
 add_lunch_combo du_dlx-userdebug
+add_lunch_combo du_find7-userdebug
 add_lunch_combo du_jewel-userdebug
 add_lunch_combo du_jflteatt-userdebug
 add_lunch_combo du_jfltecan-userdebug
