@@ -33,11 +33,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/du/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/du/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/du/prebuilt/common/bin/50-du.sh:system/addon.d/50-du.sh \
-    vendor/du/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
-    vendor/du/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+    vendor/du/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/du/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/du/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
@@ -62,7 +60,6 @@ PRODUCT_COPY_FILES += \
 # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/mkshrc:system/etc/mkshrc \
-    vendor/du/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
 
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
