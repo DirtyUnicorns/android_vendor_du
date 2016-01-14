@@ -11,6 +11,7 @@ on boot
     start sysinit
     chown system system /sys/block/mmcblk0/queue/scheduler
     chmod 0664 /sys/block/mmcblk0/queue/scheduler
+    restorecon /sys/block/mmcblk0/queue/scheduler
 
 # allow system to modify ksm control files
     chown root system /sys/kernel/mm/ksm/pages_to_scan
@@ -25,7 +26,11 @@ on boot
     chown system system /dev/cpuctl/apps/cpu.notify_on_migrate
     chmod 0644 /dev/cpuctl/apps/cpu.notify_on_migrate
 
+    # Persistent properties (only created if persist exists)
+    mkdir /persist/properties 0770 system system
+
 # adb over network
+
 on property:service.adb.tcp.port=5555
     stop adbd
     start adbd
