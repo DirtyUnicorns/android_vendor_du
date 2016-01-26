@@ -86,7 +86,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Basic \
     PhaseBeam \
-    Chromium
+    Chromium \
+    DUCertified
 
 ifeq ($(FLOUNDER_NO_DSP),)
 # DSPManager
