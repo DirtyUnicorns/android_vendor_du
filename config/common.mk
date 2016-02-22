@@ -11,9 +11,9 @@ endif
 
 # default sounds
 PRODUCT_PROPERTY_OVERRIDES := \
-    ro.config.alarm_alert=Argon.ogg \
+    ro.config.alarm_alert=Oxygen.ogg \
     ro.config.ringtone=Orion.ogg \
-    ro.config.notification_sound=pixiedust.ogg
+    ro.config.notification_sound=Tethys.ogg
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
