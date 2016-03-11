@@ -147,8 +147,8 @@ endif
 
 # HFM Files
 PRODUCT_COPY_FILES += \
-        vendor/du/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
-        vendor/du/prebuilt/etc/hosts.og:system/etc/hosts.og
+        vendor/du/prebuilt/common/etc/hosts.alt:system/etc/hosts.alt \
+        vendor/du/prebuilt/common/etc/hosts.og:system/etc/hosts.og
 
 # SuperSU
 PRODUCT_COPY_FILES += \
