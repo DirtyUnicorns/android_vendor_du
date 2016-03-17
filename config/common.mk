@@ -37,10 +37,6 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/du/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
 
-# Signature compatibility validation
-PRODUCT_COPY_FILES += \
-    vendor/du/prebuilt/common/bin/otasigcheck.sh:system/bin/otasigcheck.sh
-
 # Init file
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/init.local.rc:root/init.du.rc
@@ -89,19 +85,8 @@ PRODUCT_PACKAGES += \
     Chromium \
     DUCertified
 
-ifeq ($(FLOUNDER_NO_DSP),)
-# DSPManager
-PRODUCT_PACKAGES += \
-else
-PRODUCT_PACKAGES += \
-   DSPManager \
-   libcyanogen-dsp \
-   audio_effects.conf
-endif
-
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    Apollo \
     DU-About \
     LatinIME \
     BluetoothExt \
@@ -155,6 +140,12 @@ ifndef DU_BUILD_TYPE
     PLATFORM_VERSION_CODENAME := DIRTY-DEEDS
 endif
 
+#Build DU-Updater only if DU_BUILD_TYPE isn't DIRTY-DEEDS
+ifneq ($(DU_BUILD_TYPE),DIRTY-DEEDS)
+PRODUCT_PACKAGES += \
+    DU-Updater
+endif
+
 # Set all versions
 DU_VERSION := DU_$(DU_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d-%H%M).$(DU_VERSION)-$(DU_BUILD_TYPE)
 DU_MOD_VERSION := DU_$(DU_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d-%H%M).$(DU_VERSION)-$(DU_BUILD_TYPE)
@@ -164,8 +155,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.du.version=$(DU_VERSION) \
     ro.mod.version=$(DU_BUILD_TYPE)-v10.0 \
 
-#Build DU-Updater only if DU_BUILD_TYPE isn't DIRTY-DEEDS
-ifneq ($(DU_BUILD_TYPE),DIRTY-DEEDS)
-PRODUCT_PACKAGES += \
-    DU-Updater
-endif
