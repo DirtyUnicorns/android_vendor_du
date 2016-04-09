@@ -1,4 +1,3 @@
-
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
@@ -9,27 +8,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
-# default sounds
-PRODUCT_PROPERTY_OVERRIDES := \
-    ro.config.alarm_alert=Oxygen.ogg \
-    ro.config.ringtone=Orion.ogg \
-    ro.config.notification_sound=Tethys.ogg
-
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
+    dalvik.vm.debug.alloc=0 \
+    ro.config.alarm_alert=Oxygen.ogg \
+    ro.config.ringtone=Orion.ogg \
+    ro.config.notification_sound=Tethys.ogg \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
+    ro.build.selinux=1 \
     ro.com.android.dataroaming=false
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
-
-# Disable excessive dalvik debug messages
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.debug.alloc=0
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -63,58 +54,14 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # DU Utils Library
-PRODUCT_PACKAGES += \
-    org.dirtyunicorns.utils
-
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
 # Theme engine
 include vendor/du/config/themes_common.mk
 
-# Required packages
-PRODUCT_PACKAGES += \
-    CellBroadcastReceiver \
-    Development \
-    SpareParts
-
-# Optional packages
-PRODUCT_PACKAGES += \
-    Basic \
-    PhaseBeam \
-    Chromium \
-    DUCertified
-
-# Extra Optional packages
-PRODUCT_PACKAGES += \
-    DU-About \
-    LatinIME \
-    BluetoothExt \
-    CalendarWidget \
-    OmniSwitch \
-    LockClock
-
-# Extra tools
-PRODUCT_PACKAGES += \
-    openvpn \
-    e2fsck \
-    mke2fs \
-    tune2fs \
-    mount.exfat \
-    fsck.exfat \
-    mkfs.exfat
-
-ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
-# Stagefright FFMPEG plugin
-PRODUCT_PACKAGES += \
-    libstagefright_soft_ffmpegadec \
-    libstagefright_soft_ffmpegvdec \
-    libFFmpegExtractor \
-    libnamparser
-endif
-
-# easy way to extend to add more packages
--include vendor/extra/product.mk
+# Packages
+include vendor/du/config/packages.mk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 
