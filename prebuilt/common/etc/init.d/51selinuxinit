@@ -1,0 +1,7 @@
+#!/system/bin/sh
+# changes permissions on /sys/fs/selinux/enforce to allow settings to change selinux without root
+
+LOG="log -p i -t selinux_init"
+$LOG "Setting permissions";
+chown root:system /sys/fs/selinux/enforce;
+chmod 660 /sys/fs/selinux/enforce;
