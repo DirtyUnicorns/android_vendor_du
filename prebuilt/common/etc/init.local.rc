@@ -4,6 +4,10 @@ on init
     export TERMINFO /system/etc/terminfo
     export TERM linux
 
+    # Allow system_app to write to setenforce
+    chown root system /sys/fs/selinux/enforce
+    chmod 0660 /sys/fs/selinux/enforce
+
 on post-fs-data
     mkdir /data/.ssh 0750 root shell
 
