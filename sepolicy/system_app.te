@@ -6,3 +6,6 @@ allow system_app media_rw_data_file:file create_file_perms;
 
 # Boot animation
 allow system_app ctl_bootanim_prop:property_service set;
+
+# For DU-Tweaks
+allow system_app kernel:security setenforce;
