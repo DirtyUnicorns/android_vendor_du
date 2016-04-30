@@ -93,6 +93,9 @@ PRODUCT_PACKAGES += \
     DU-Updater
 endif
 
+# easy way to extend to add more packages
+-include vendor/extra/product.mk
+
 # Set all versions
 DU_VERSION := DU_$(DU_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d-%H%M).$(DU_VERSION)-$(DU_BUILD_TYPE)
 DU_MOD_VERSION := DU_$(DU_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d-%H%M).$(DU_VERSION)-$(DU_BUILD_TYPE)
