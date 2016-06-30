@@ -104,4 +104,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.du.version=$(DU_VERSION) \
     ro.mod.version=$(DU_BUILD_TYPE)-v10.3 \
+    ro.cmte.legacy.version=1
 
