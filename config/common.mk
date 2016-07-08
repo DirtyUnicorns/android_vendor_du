@@ -28,6 +28,10 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/du/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
 
+# Backup Services whitelist
+PRODUCT_COPY_FILES += \
+    vendor/du/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
+
 # Init file
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/init.local.rc:root/init.du.rc
