@@ -7,5 +7,4 @@ add_lunch_combo du_lux-userdebug
 add_lunch_combo du_m7-userdebug
 add_lunch_combo du_m7vzw-userdebug
 add_lunch_combo du_m8-userdebug
-add_lunch_combo du_r7plus-userdebug
 add_lunch_combo du_Z00T-userdebug
