@@ -18,7 +18,8 @@ PRODUCT_PACKAGES += \
     LatinIME \
     LockClock \
     OmniSwitch \
-    PhaseBeam
+    PhaseBeam \
+    SonyMusic
 
 # Extra tools
 PRODUCT_PACKAGES += \
