@@ -1,6 +1,7 @@
 add_lunch_combo du_bacon-userdebug
 add_lunch_combo du_clark-userdebug
 add_lunch_combo du_dlx-userdebug
+add_lunch_combo du_ether-userdebug
 add_lunch_combo du_find7s-userdebug
 add_lunch_combo du_lux-userdebug
 add_lunch_combo du_m7-userdebug
