@@ -1,7 +1,3 @@
-# DU Utils Library
-PRODUCT_PACKAGES += \
-    org.dirtyunicorns.utils
-
 # Required packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
@@ -11,14 +7,7 @@ PRODUCT_PACKAGES += \
 # Optional packages
 PRODUCT_PACKAGES += \
     Basic \
-    CalendarWidget \
-    Chromium \
-    DU-About \
-    DUCertified \
-    LatinIME \
-    LockClock \
-    OmniSwitch \
-    PhaseBeam
+    LatinIME
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -29,12 +18,3 @@ PRODUCT_PACKAGES += \
     mount.exfat \
     fsck.exfat \
     mkfs.exfat
-
-# Stagefright FFMPEG plugin
-ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
-PRODUCT_PACKAGES += \
-    libstagefright_soft_ffmpegadec \
-    libstagefright_soft_ffmpegvdec \
-    libFFmpegExtractor \
-    libnamparser
-endif

@@ -69,13 +69,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.sf.extractor-plugin=libffmpeg_extractor.so
 endif
 
-# DU Utils Library
-PRODUCT_BOOT_JARS += \
-    org.dirtyunicorns.utils
-
-# Theme engine
-include vendor/du/config/themes_common.mk
-
 # Packages
 include vendor/du/config/packages.mk
 
@@ -85,19 +78,14 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 
-# HFM Files
-PRODUCT_COPY_FILES += \
-        vendor/du/prebuilt/common/etc/hosts.alt:system/etc/hosts.alt \
-        vendor/du/prebuilt/common/etc/hosts.og:system/etc/hosts.og
-
 # SuperSU
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/du/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # Versioning System
-ANDROID_VERSION = 6.0.1
-DU_VERSION = v10.5
+ANDROID_VERSION = 7.0
+DU_VERSION = v11.0
 ifndef DU_BUILD_TYPE
     DU_BUILD_TYPE := DIRTY-DEEDS
     PLATFORM_VERSION_CODENAME := DIRTY-DEEDS
@@ -119,6 +107,5 @@ DU_MOD_VERSION := DU_$(DU_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d-%H%M
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.du.version=$(DU_VERSION) \
-    ro.mod.version=$(DU_BUILD_TYPE)-v10.5 \
-    ro.cmte.legacy.version=1
+    ro.mod.version=$(DU_BUILD_TYPE)-v11.0
 
