@@ -58,6 +58,7 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # Stagefright FFMPEG plugin
+ifneq ($(BOARD_USES_QCOM_HARDWARE),true)
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \
     libffmpeg_omx \
@@ -66,6 +67,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     media.sf.omx-plugin=libffmpeg_omx.so \
     media.sf.extractor-plugin=libffmpeg_extractor.so
+endif
 
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
