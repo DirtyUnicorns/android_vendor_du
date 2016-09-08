@@ -40,9 +40,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/init.local.rc:root/init.du.rc
 
-# Copy latinime for gesture typing
+# Copy LatinIME for gesture typing
 PRODUCT_COPY_FILES += \
-    vendor/du/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+    vendor/du/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
+    vendor/du/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
+    vendor/du/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so \
+    vendor/du/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
