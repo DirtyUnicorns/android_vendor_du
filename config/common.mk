@@ -97,7 +97,7 @@ PRODUCT_COPY_FILES += \
 
 # Versioning System
 ANDROID_VERSION = 6.0.1
-DU_VERSION = v10.5
+DU_VERSION = v10.6
 ifndef DU_BUILD_TYPE
     DU_BUILD_TYPE := DIRTY-DEEDS
     PLATFORM_VERSION_CODENAME := DIRTY-DEEDS
@@ -119,6 +119,6 @@ DU_MOD_VERSION := DU_$(DU_BUILD)_$(ANDROID_VERSION)_$(shell date -u +%Y%m%d-%H%M
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.du.version=$(DU_VERSION) \
-    ro.mod.version=$(DU_BUILD_TYPE)-v10.5 \
+    ro.mod.version=$(DU_BUILD_TYPE)-v10.6 \
     ro.cmte.legacy.version=1
 
