@@ -2380,11 +2380,7 @@
       mcc="219"
       mnc="10"
       apn="data.vip.hr"
-      user="38591"
-      password="38591"
       authtype="1"
-      proxy="212.91.99.91"
-      port="8080"
       type="default,supl"
       protocol="IPV4V6"
   />
