@@ -9,7 +9,8 @@ PRODUCT_PACKAGES += \
     Basic \
     CalendarWidget \
     Chromium \
-    LatinIME
+    LatinIME \
+    OmniSwitch
 
 # Extra tools
 PRODUCT_PACKAGES += \
