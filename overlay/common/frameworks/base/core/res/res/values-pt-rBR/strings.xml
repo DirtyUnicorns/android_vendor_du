@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="android_upgrading_title" msgid="1584192285441405746">"O Dirty Unicorns está sendo atualizado..."</string>
+    <string name="android_start_title" msgid="8418054686415318207">"O Dirty Unicorns está iniciando..."</string>
+    <string name="android_upgrading_notification_title" msgid="1619393112444671028">"O Dirty Unicorns está sendo atualizado"</string>
+
+</resources>
+
