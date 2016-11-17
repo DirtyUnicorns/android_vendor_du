@@ -8,9 +8,35 @@
         <item>com.google.android.gms</item>
     </string-array>
 
-<!-- Hide Project Fi app unless it is being used -->
+    <!-- Hide Project Fi app unless it is being used -->
     <string-array name="config_disabledUntilUsedPreinstalledCarrierApps">
         <item>com.google.android.apps.tycho</item>
     </string-array>
-</resources>
 
+    <!-- The duration (in milliseconds) of a short animation. -->
+    <integer name="config_shortAnimTime">100</integer>
+
+    <!-- The duration (in milliseconds) of a medium-length animation. -->
+    <integer name="config_mediumAnimTime">200</integer>
+
+    <!-- The duration (in milliseconds) of a long animation. -->
+    <integer name="config_longAnimTime">250</integer>
+
+    <!-- The duration (in milliseconds) of the activity open/close and fragment open/close animations. -->
+    <integer name="config_activityShortDur">75</integer>
+    <integer name="config_activityDefaultDur">110</integer>
+
+    <string-array translatable="false" name="config_globalActionsList">
+        <item>power</item>
+        <item>reboot</item>
+        <item>screenshot</item>
+        <item>screenrecord</item>
+        <item>torch</item>
+        <item>airplane</item>
+        <item>settings</item>
+        <item>lockdown</item>
+        <item>users</item>
+        <item>silent</item>
+    </string-array>
+
+</resources>
