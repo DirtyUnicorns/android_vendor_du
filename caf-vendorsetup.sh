@@ -4,4 +4,5 @@ add_lunch_combo du_ether-userdebug
 add_lunch_combo du_h815-userdebug
 add_lunch_combo du_lux-userdebug
 add_lunch_combo du_m8-userdebug
+add_lunch_combo du_oneplus2-userdebug
 add_lunch_combo du_oneplus3-userdebug
