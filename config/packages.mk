@@ -1,8 +1,7 @@
 # Required packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
-    Development \
-    SpareParts
+    Development
 
 # Optional packages
 PRODUCT_PACKAGES += \
@@ -10,6 +9,7 @@ PRODUCT_PACKAGES += \
     CalendarWidget \
     Chromium \
     LatinIME \
+    masquerade \
     OmniSwitch \
     WallpaperPicker
 
