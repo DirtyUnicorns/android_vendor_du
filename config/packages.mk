@@ -10,7 +10,8 @@ PRODUCT_PACKAGES += \
     CalendarWidget \
     Chromium \
     LatinIME \
-    OmniSwitch
+    OmniSwitch \
+    WallpaperPicker
 
 # Extra tools
 PRODUCT_PACKAGES += \
