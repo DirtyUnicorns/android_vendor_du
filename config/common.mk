@@ -94,11 +94,11 @@ PRODUCT_COPY_FILES += \
 ANDROID_VERSION = 7.1.1
 DU_VERSION = v11.0
 ifndef DU_BUILD_TYPE
-    DU_BUILD_TYPE := DIRTY-DEEDS
-    PLATFORM_VERSION_CODENAME := DIRTY-DEEDS
+    DU_BUILD_TYPE := UNOFFICIAL
+    PLATFORM_VERSION_CODENAME := UNOFFICIAL
 endif
 
-# Build DU-Updater for only official, test and weeklies
+# Build DU-Updater for only official, rc and weeklies
 ifeq ($(DU_BUILD_TYPE),OFFICIAL)
     PRODUCT_PACKAGES += \
         DU-Updater
@@ -107,7 +107,7 @@ ifeq ($(DU_BUILD_TYPE),WEEKLIES)
     PRODUCT_PACKAGES += \
         DU-Updater
 endif
-ifeq ($(DU_BUILD_TYPE),TEST)
+ifeq ($(DU_BUILD_TYPE),RC)
     PRODUCT_PACKAGES += \
         DU-Updater
 endif
