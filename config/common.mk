@@ -20,7 +20,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.build.selinux=1 \
-    ro.com.android.dataroaming=false
+    ro.com.android.dataroaming=false \
+    ro.opa.eligible_device=true
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -131,4 +132,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.du.version=$(DU_VERSION) \
     ro.mod.version=$(DU_BUILD_TYPE)-v11.0
-
