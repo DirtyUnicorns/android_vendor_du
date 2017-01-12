@@ -26,7 +26,7 @@
 
     <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
     <string name="quick_settings_tiles_stock" translatable="false">
-        wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,location,hotspot,inversion,saver,work,cast,night,screenshot,adb_network,sync,expanded_desktop,reboot,music,ime,caffeine,navigation_bar,androidauto,heads_up
+        wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,location,hotspot,inversion,saver,work,cast,night,screenshot,adb_network,sync,expanded_desktop,reboot,music,ime,caffeine,navigation_bar,androidauto,heads_up,ambient
     </string>
 
     <!-- Timeouts for brightness dialog to disappear -->
