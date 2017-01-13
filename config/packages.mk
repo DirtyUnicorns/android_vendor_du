@@ -10,8 +10,8 @@ PRODUCT_PACKAGES += \
     Chromium \
     LatinIME \
     masquerade \
-    OmniSwitch \
-    WallpaperPicker
+    OmniStyle \
+    OmniSwitch
 
 # Extra tools
 PRODUCT_PACKAGES += \
