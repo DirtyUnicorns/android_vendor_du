@@ -91,10 +91,6 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
 endif
 
-# SuperSU
-PRODUCT_COPY_FILES += \
-    vendor/du/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip
-
 # Versioning System
 ANDROID_VERSION = 7.1.1
 DU_VERSION = v11.0
