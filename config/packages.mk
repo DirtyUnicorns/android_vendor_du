@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
     DU-About \
     LatinIME \
     masquerade \
+    OmniJaws \
     OmniStyle \
     OmniSwitch
 
