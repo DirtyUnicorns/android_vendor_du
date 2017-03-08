@@ -9,7 +9,7 @@ PRODUCT_PACKAGES += \
     CalendarWidget \
     DU-About \
     LatinIME \
-    masquerade \
+    ThemeInterfacer \
     OmniJaws \
     OmniStyle \
     OmniSwitch
