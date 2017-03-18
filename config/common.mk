@@ -21,7 +21,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.build.selinux=1 \
-    ro.com.android.dataroaming=false
+    ro.com.android.dataroaming=false \
+    ro.com.google.ime.theme_id=5
 
 # Backup Tool / whitelist
 PRODUCT_COPY_FILES += \
