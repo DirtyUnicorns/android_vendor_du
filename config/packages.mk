@@ -12,7 +12,8 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle \
     OmniSwitch \
-    ThemeInterfacer
+    ThemeInterfacer \
+    Turbo
 
 # Extra tools
 PRODUCT_PACKAGES += \
