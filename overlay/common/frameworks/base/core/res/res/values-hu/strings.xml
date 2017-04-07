@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="android_upgrading_title" msgid="1584192285441405746">"Dirty Unicorns frissítése folyamatban..."</string>
-    <string name="android_start_title" msgid="8418054686415318207">"Az Dirty Unicorns indítása…"</string>
+    <string name="android_upgrading_title" msgid="1584192285441405746">"Dirty Unicorns frissítése folyamatban\u2026"</string>
+    <string name="android_start_title" msgid="8418054686415318207">"Dirty Unicorns indítása\u2026"</string>
+    <string name="android_upgrading_fstrim" msgid="8036718871534640010">"Tároló dirtysítése."</string>
     <string name="android_upgrading_notification_title" msgid="1619393112444671028">"Dirty Unicorns frissítése folyamatban"</string>
+    <string name="android_upgrading_apk" msgid="7904042682111526169">"<xliff:g id="number" example="123">%1$d</xliff:g> / <xliff:g id="number" example="123">%2$d</xliff:g> alkalmazás dirtysítése."</string>
 
 </resources>
-
