@@ -1,6 +1,5 @@
 add_lunch_combo du_clark-userdebug
 add_lunch_combo du_d802-userdebug
-add_lunch_combo du_ether-userdebug
 add_lunch_combo du_lux-userdebug
 add_lunch_combo du_oneplus2-userdebug
 add_lunch_combo du_oneplus3-userdebug
