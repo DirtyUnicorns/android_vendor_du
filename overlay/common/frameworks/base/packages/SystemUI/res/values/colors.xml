@@ -21,5 +21,12 @@
 
     <drawable name="notification_number_text_color">#ff000000</drawable>
 
+    <!-- Navbar icon Colors -->
+    <color name="icon_color_back">@android:color/white</color>
+    <color name="icon_color_ime_switcher">@android:color/white</color>
+    <color name="icon_color_split_screen">@android:color/white</color>
+    <color name="icon_color_home">@android:color/white</color>
+    <color name="icon_color_overview">@android:color/white</color>
+
 </resources>
 
