@@ -6,7 +6,6 @@ PRODUCT_PACKAGES += \
 # Optional packages
 PRODUCT_PACKAGES += \
     Basic \
-    CalendarWidget \
     DU-About \
     LatinIME \
     OmniJaws \
