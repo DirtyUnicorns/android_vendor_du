@@ -6,25 +6,14 @@ ifndef DU_BUILD_TYPE
     PLATFORM_VERSION_CODENAME := UNOFFICIAL
 endif
 
-# Build DU-Updater for only official, rc and weeklies
-ifeq ($(DU_BUILD_TYPE),OFFICIAL)
-    PRODUCT_PACKAGES += \
-        DU-Updater
-endif
-ifeq ($(DU_BUILD_TYPE),WEEKLIES)
-    PRODUCT_PACKAGES += \
-        DU-Updater
-endif
-ifeq ($(DU_BUILD_TYPE),RC)
+# Only include DU-Updater for official, weeklies, and rc builds
+ifeq ($(filter-out OFFICIAL WEEKLIES RC,$(DU_BUILD_TYPE)),)
     PRODUCT_PACKAGES += \
         DU-Updater
 endif
 
-# Use signing keys for only official and weeklies
-ifeq ($(DU_BUILD_TYPE),OFFICIAL)
-    PRODUCT_DEFAULT_DEV_CERTIFICATE := ../.keys/releasekey
-endif
-ifeq ($(DU_BUILD_TYPE),WEEKLIES)
+# Sign builds if building an official or weekly build
+ifeq ($(filter-out OFFICIAL WEEKLIES,$(DU_BUILD_TYPE)),)
     PRODUCT_DEFAULT_DEV_CERTIFICATE := ../.keys/releasekey
 endif
 
