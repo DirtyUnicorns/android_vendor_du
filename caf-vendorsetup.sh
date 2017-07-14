@@ -4,5 +4,4 @@ add_lunch_combo du_lux-userdebug
 add_lunch_combo du_oneplus3-userdebug
 add_lunch_combo du_osprey-userdebug
 add_lunch_combo du_pme-userdebug
-add_lunch_combo du_shieldtablet-userdebug
 add_lunch_combo du_x2-userdebug
