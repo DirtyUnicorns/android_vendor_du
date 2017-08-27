@@ -17,7 +17,7 @@ ifeq ($(filter-out OFFICIAL WEEKLIES,$(DU_BUILD_TYPE)),)
 endif
 
 # Set all versions
-DU_VERSION := DU_$(DU_BUILD)_$(PLATFORM_VERSION)_$(shell date -u +%Y%m%d-%H%M).$(DU_BASE_VERSION)-$(DU_BUILD_TYPE)
+DU_VERSION := $(TARGET_PRODUCT)-$(DU_BASE_VERSION)-$(shell date -u +%Y%m%d-%H%M)-$(DU_BUILD_TYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
