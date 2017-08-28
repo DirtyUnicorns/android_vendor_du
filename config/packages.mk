@@ -1,8 +1,3 @@
-# Required packages
-PRODUCT_PACKAGES += \
-    Basic \
-    LatinIME
-
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
