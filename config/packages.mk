@@ -1,3 +1,7 @@
+# Packages
+PRODUCT_PACKAGES += \
+    Turbo
+
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
