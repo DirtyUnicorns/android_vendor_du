@@ -24,6 +24,7 @@ DU_PRODUCT_PROPERTIES += \
     ro.setupwizard.rotation_locked=true \
     ro.com.google.ime.bs_theme=true \
     ro.com.google.ime.theme_id=5 \
+    persist.sys.disable_rescue=true \
     ro.build.selinux=1
 
 # Allow tethering without provisioning app
