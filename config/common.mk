@@ -67,6 +67,9 @@ include vendor/du/config/packages.mk
 # Branding
 include vendor/du/config/branding.mk
 
+# Bootanimation
+include vendor/du/config/bootanimation.mk
+
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
 
