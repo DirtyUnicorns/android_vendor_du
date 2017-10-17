@@ -48,6 +48,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
+# Charging sounds
+PRODUCT_COPY_FILES += \
+    vendor/du/google/effects/BatteryPlugged.ogg:system/media/audio/ui/BatteryPlugged.ogg \
+    vendor/du/google/effects/BatteryPlugged_48k.ogg:system/media/audio/ui/BatteryPlugged_48k.ogg
+
 # Packages
 include vendor/du/config/packages.mk
 
