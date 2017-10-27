@@ -1,6 +1,5 @@
 # Packages
 PRODUCT_PACKAGES += \
-    DU-Tweaks \
     Turbo
 
 # Extra tools
