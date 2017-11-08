@@ -53,6 +53,12 @@ PRODUCT_COPY_FILES += \
     vendor/du/google/effects/BatteryPlugged.ogg:system/media/audio/ui/BatteryPlugged.ogg \
     vendor/du/google/effects/BatteryPlugged_48k.ogg:system/media/audio/ui/BatteryPlugged_48k.ogg
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/extras/tools/backuptool.sh:install/bin/backuptool.sh \
+    vendor/extras/tools/backuptool.functions:install/bin/backuptool.functions \
+    vendor/extras/tools/50-du.sh:system/addon.d/50-du.sh
+
 # Packages
 include vendor/du/config/packages.mk
 
