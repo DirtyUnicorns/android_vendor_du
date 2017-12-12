@@ -1,1 +1,9 @@
-allow platform_app nfc_service:service_manager find;
+# Direct access to vold-mounted storage under /mnt/media_rw
+# This is a performance optimization that allows platform apps to bypass the FUSE layer
+#allow platform_app sdcard_posix:dir create_dir_perms;
+#allow platform_app sdcard_posix:file create_file_perms;
+
+#exfat/ntfs OTG
+allow platform_app fuse_device:dir { rw_dir_perms create_dir_perms };
+allow platform_app fuse_device:file { rw_file_perms create_file_perms };
+allow platform_app fuse_device:filesystem getattr;

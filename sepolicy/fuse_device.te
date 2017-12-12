@@ -1,0 +1,3 @@
+#Exfat OTG
+allow fuse_device self:filesystem associate;
+
