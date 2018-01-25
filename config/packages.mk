@@ -1,6 +1,7 @@
 # Packages
 PRODUCT_PACKAGES += \
     DuiDarkTheme \
+    GBoardDarkTheme \
     SettingsDarkTheme \
     SystemDarkTheme \
     Turbo
