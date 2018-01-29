@@ -30,6 +30,7 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/init.local.rc:root/init.du.rc
 
 # LatinIME gesture typing
+ifneq ($(filter tenderloin,$(TARGET_PRODUCT)),)
 ifneq ($(filter shamu,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
@@ -38,6 +39,7 @@ else
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so \
     vendor/du/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so
+endif
 endif
 
 # Fix Google dialer
