@@ -1,10 +1,13 @@
 # Packages
 PRODUCT_PACKAGES += \
-    DuiDarkTheme \
-    GBoardDarkTheme \
-    SettingsDarkTheme \
-    SystemDarkTheme \
     Turbo
+
+# Overlays
+PRODUCT_PACKAGES += \
+    DuiDark \
+    GBoardDark \
+    SettingsDark \
+    SystemDark
 
 # Extra tools
 PRODUCT_PACKAGES += \
