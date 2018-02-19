@@ -18,6 +18,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="dui_overlay_dark">Dialogues DUI</string>
+    <string name="accent_color_teal">Teal</string>
 
 </resources>
+
