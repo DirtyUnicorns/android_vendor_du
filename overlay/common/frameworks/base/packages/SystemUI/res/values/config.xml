@@ -28,7 +28,7 @@
 
     <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
     <string name="quick_settings_tiles_stock" translatable="false">
-        wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,location,caffeine,cast,hotspot,inversion,nfc,night,reboot,saver,screenshot,work,navigation
+        wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,location,caffeine,cast,hotspot,inversion,nfc,night,reboot,saver,screenshot,work,navigation,theme
     </string>
 
 </resources>
