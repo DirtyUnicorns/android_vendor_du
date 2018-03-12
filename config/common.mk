@@ -19,6 +19,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
     ro.com.android.dateformat=MM-dd-yyyy \
     persist.sys.disable_rescue=true \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0 \
     ro.build.selinux=1
 
 PRODUCT_COPY_FILES += \
