@@ -30,6 +30,10 @@ PRODUCT_PACKAGES += \
     YellowAccent \
     WhiteAccent
 
+# Fonts
+PRODUCT_PACKAGES += \
+    DU-Fonts
+
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
