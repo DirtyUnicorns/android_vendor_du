@@ -20,4 +20,17 @@
 
     <string name="settings_overlay_dark">Paramètres</string>
 
+    <string name="change_content">
+        <![CDATA[
+        	<b><font color="#FFFFFF">Titre :</font></b><br />
+        	<font color="#e8e8e8">%title</font><br /><br />
+        	<b><font color="#FFFFFF">Message du Commit :</font></b><br />
+        	<font color="#e8e8e8">%message</font><br /><br />
+        	<b><font color="#FFFFFF">Propriétaire :</font></b> <font color="#e8e8e8">%owner</font><br />
+        	<b><font color="#FFFFFF">Fusionné :</font></b> <font color="#e8e8e8">%date</font><br />
+        	<b><font color="#FFFFFF">Branche :</font></b> <font color="#e8e8e8">%branch</font><br />
+        	<b><font color="#FFFFFF">Projet :</font></b> <font color="#e8e8e8">%project</font><br />
+        ]]>
+    </string>
+
 </resources>
