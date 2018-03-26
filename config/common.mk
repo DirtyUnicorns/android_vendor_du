@@ -63,6 +63,10 @@ PRODUCT_COPY_FILES += \
     vendor/extras/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/extras/tools/50-du.sh:system/addon.d/50-du.sh
 
+# Clean cache
+PRODUCT_COPY_FILES += \
+    vendor/extras/tools/clean_cache.sh:system/bin/clean_cache.sh
+
 # Packages
 include vendor/du/config/packages.mk
 
