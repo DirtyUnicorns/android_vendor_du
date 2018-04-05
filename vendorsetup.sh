@@ -6,4 +6,6 @@ add_lunch_combo du_hammerhead-user
 add_lunch_combo du_hammerhead-userdebug
 add_lunch_combo du_shamu-user
 add_lunch_combo du_shamu-userdebug
+add_lunch_combo du_taimen-user
+add_lunch_combo du_taimen-userdebug
 
