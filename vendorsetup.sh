@@ -1,11 +1,4 @@
-add_lunch_combo du_angler-user
-add_lunch_combo du_angler-userdebug
-add_lunch_combo du_dragon-user
-add_lunch_combo du_dragon-userdebug
-add_lunch_combo du_hammerhead-user
-add_lunch_combo du_hammerhead-userdebug
-add_lunch_combo du_shamu-user
-add_lunch_combo du_shamu-userdebug
-add_lunch_combo du_taimen-user
-add_lunch_combo du_taimen-userdebug
-
+for device in angler dragon hammerhead shamu taimen; do
+    add_lunch_combo du_${device}-user
+    add_lunch_combo du_${device}-userdebug
+done
