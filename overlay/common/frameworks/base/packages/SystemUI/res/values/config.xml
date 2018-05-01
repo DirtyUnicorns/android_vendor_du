@@ -31,5 +31,10 @@
         wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,location,caffeine,cast,hotspot,inversion,navigation,nfc,night,reboot,saver,screenshot,smartpixels,theme,work
     </string>
 
-</resources>
+    <!-- The duration in seconds to wait before the dismiss buttons are shown. -->
+    <integer name="recents_task_bar_dismiss_delay_seconds">0</integer>
 
+    <!-- The duration for animating the task decorations in after transitioning from an app. -->
+    <integer name="recents_task_enter_from_app_duration">0</integer>
+
+</resources>
