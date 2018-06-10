@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2007 The Android Open Source Project
+<!--
+     Copyright (C) 2016 The Pure Nexus Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,10 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Security dialog -->
-    <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-06-01</string>
-
-    <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
-    <string name="lockscreen_clock_selection_analog_du">Analog DU</string>
+    <string name="custom_clock_styles" translatable="false">
+        digital,digital_bold,sammy,sammy_bold,analog,com.analog.clocks.deadpool,com.analog.clocks.du
+    </string>
 </resources>
