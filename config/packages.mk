@@ -29,6 +29,7 @@ PRODUCT_PACKAGES += \
 # Analog clocks
 PRODUCT_PACKAGES += \
     AnalogDeadpool \
+    AnalogDeepNight \
     AnalogDu
 
 # Dark theme
