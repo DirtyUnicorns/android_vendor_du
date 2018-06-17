@@ -8805,8 +8805,8 @@
       server="*"
       type="mms"
       password="*"
-      mmsc="http://oap7.sprintpcs.com"
-      mmsproxy="68.28.31.7"
+      mmsc="http://mms.sprintpcs.com/"
+      mmsproxy="oap7.sprintpcs.com"
       mmsport="80"
       authtype="3"
   />
