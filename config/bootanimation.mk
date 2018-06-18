@@ -4,7 +4,7 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/media/1440x2880.zip:system/media/bootanimation.zip
 endif
 
-ifeq ($(filter shamu angler,$(TARGET_PRODUCT)),)
+ifeq ($(filter  angler marlin shamu,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/media/1440x2560.zip:system/media/bootanimation.zip
 endif
