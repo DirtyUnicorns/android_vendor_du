@@ -6,7 +6,7 @@ ifneq ($(filter taimen,$(du_device)),)
 scr_resolution := 1440x2880
 endif
 
-ifneq ($(filter shamu marlin angler,$(du_device)),)
+ifneq ($(filter shamu marlin angler nash,$(du_device)),)
 scr_resolution := 1440x2560
 endif
 
