@@ -1,7 +1,8 @@
 # Packages
 PRODUCT_PACKAGES += \
     DU-Fonts \
-    Turbo
+    Turbo \
+    WallpaperPicker
 
 # Accents
 PRODUCT_PACKAGES += \
