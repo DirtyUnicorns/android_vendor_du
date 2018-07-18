@@ -14,10 +14,6 @@ ifneq ($(filter dumpling,$(du_device)),)
 scr_resolution := 1080x2160
 endif
 
-ifneq ($(filter hammerhead cheeseburger oneplus3 potter,$(du_device)),)
-scr_resolution := 1080x1920
-endif
-
 ifneq ($(filter tenderloin,$(du_device)),)
 scr_resolution := 768x1024
 endif
