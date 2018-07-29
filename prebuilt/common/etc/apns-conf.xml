@@ -27012,39 +27012,6 @@
       mmsport="8080"
   />
 
-  <apn carrier="Indosat-SNS"
-      mcc="510"
-      mnc="01"
-      apn="indosatgprs"
-      authtype="1"
-      type="default,supl"
-  />
-
-  <apn carrier="Indosat GPRS"
-      mcc="510"
-      mnc="01"
-      apn="indosatgprs"
-      user="indosat"
-      password="indosat"
-      authtype="1"
-      proxy="10.19.19.19"
-      port="8080"
-      type="default,supl"
-  />
-
-  <apn carrier="Indosat MMS"
-      mcc="510"
-      mnc="01"
-      apn="indosatmms"
-      user="indosat"
-      password="indosat"
-      authtype="1"
-      mmsc="http://mmsc.indosat.com"
-      mmsproxy="10.19.19.19"
-      mmsport="8080"
-      type="mms"
-  />
-
   <apn carrier="AXIS-SNS"
       mcc="510"
       mnc="08"
@@ -27118,13 +27085,51 @@
       type="default,supl"
   />
 
+  <apn carrier="XL Unlimited"
+      mcc="510"
+      mnc="11"
+      apn="xlunlimited"
+      proxy="202.152.240.50"
+      port="8080"
+      type="default,supl"
+  />
+  
+  <apn carrier="XL-GPRS"
+      mcc="510"
+      mnc="11"
+      apn="www.xlgprs.net"
+      proxy="202.152.240.50"
+      port="8080"
+      user="xlgprs"
+      password="proxl"
+      type="default,supl"
+  />
+  
+  <apn carrier="XL-MMS"
+      mcc="510"
+      mnc="11"
+      apn="www.xlmms.net"
+      mmsproxy="202.152.240.50"
+      mmsport="8080"
+      mmsc="http://mmc.xl.net.id/servlets/mms"
+      user="xlgprs"
+      password="proxl"
+      type="mms"
+  />
+  
+  <apn carrier="XL-INTERNET"
+      mcc="510"
+      mnc="11"
+      apn="internet"
+      type="default,supl"
+  />
+  
   <apn carrier="XL-MMS"
       mcc="510"
       mnc="11"
       apn="www.xlmms.net"
       user="xlgprs"
       password="proxl"
-      authtype="1"
       mmsc="http://mmc.xl.net.id/servlets/mms"
       mmsproxy="202.152.240.50"
       mmsport="8080"
@@ -27164,6 +27169,27 @@
       type="mms"
   />
 
+  <apn carrier="IM3 MMS"
+      mcc="510"
+      mnc="21"
+      apn="indosatmms"
+      user="indosat"
+      password="indosat"
+      mmsc="http://mmsc.indosat.com"
+      mmsproxy="10.19.19.19"
+      mmsport="8080"
+      type="mms"
+  />
+
+  <apn carrier="IM3 Internet"
+      mcc="510"
+      mnc="21"
+      apn="indosat-m3.net"
+      user="gprs"
+      password="im3"
+      type="default,supl"
+  />
+
   <apn carrier="3-SNS"
       mcc="510"
       mnc="89"
@@ -27195,6 +27221,38 @@
       type="mms"
   />
 
+  <apn carrier="Smartfren4G"
+      mcc="510"
+      mnc="09"
+      apn="Smartfren4G"
+      user="smartfren"
+      password="smartfren"
+      authtype="3"
+      type="default,supl"
+      protocol="IPV4V6"
+  />
+  
+  <apn carrier="Smartfren MMS"
+      mcc="510"
+      mnc="09"
+      apn="smartfren"
+      user="smartfren"
+      password="smartfren"
+      mmsc="http://10.17.93.103:8080"
+      mmsproxy="10.17.27.250"
+      mmsport="8080"
+      authtype="3"
+      type="mms"
+      protocol="IPV4V6"
+  />
+  
+  <apn carrier="Smartfren IMS"
+      mcc="510"
+      mnc="09"
+      apn="IMS"
+      type="ims" 
+  />
+  
   <apn carrier="Telin"
       mcc="514"
       mnc="01"
