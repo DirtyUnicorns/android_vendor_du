@@ -74,11 +74,6 @@
     -->
     <bool name="config_enableWifiDisplay">true</bool>
 
-    <!-- System font packages (overlay in vendor) -->
-    <string-array name="config_fontPackages" translatable="false">
-        <item>com.dirtyunicorns.fonts</item>
-    </string-array>
-
     <!-- enable doze powersaving mode -->
     <bool name="config_enableAutoPowerModes">true</bool>
 </resources>

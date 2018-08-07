@@ -21,16 +21,6 @@
      for different hardware and product builds. -->
 <resources>
 
-    <!-- The default tiles to display in QuickSettings -->
-    <string name="quick_settings_tiles_default" translatable="false">
-        wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,location
-    </string>
-
-    <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
-    <string name="quick_settings_tiles_stock" translatable="false">
-        wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,location,caffeine,cast,hotspot,inversion,navigation,nfc,night,reboot,saver,screenshot,smartpixels,theme,work
-    </string>
-
     <!-- The duration in seconds to wait before the dismiss buttons are shown. -->
     <integer name="recents_task_bar_dismiss_delay_seconds">0</integer>
 

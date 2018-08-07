@@ -19,7 +19,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
     ro.com.android.dateformat=MM-dd-yyyy \
-    persist.sys.disable_rescue=true \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0 \
     ro.setupwizard.rotation_locked=true \
@@ -46,28 +45,15 @@ PRODUCT_COPY_FILES += \
 endif
 endif
 
-# Fix Google dialer
-PRODUCT_COPY_FILES += \
-    vendor/du/prebuilt/common/etc/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
-
 # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
-# Charging sounds
-PRODUCT_COPY_FILES += \
-    vendor/du/google/effects/BatteryPlugged.ogg:system/media/audio/ui/BatteryPlugged.ogg \
-    vendor/du/google/effects/BatteryPlugged_48k.ogg:system/media/audio/ui/BatteryPlugged_48k.ogg
-
 # Backup Tool
-PRODUCT_COPY_FILES += \
-    vendor/extras/tools/backuptool.sh:install/bin/backuptool.sh \
-    vendor/extras/tools/backuptool.functions:install/bin/backuptool.functions \
-    vendor/extras/tools/50-du.sh:system/addon.d/50-du.sh
-
-# Clean cache
-PRODUCT_COPY_FILES += \
-    vendor/extras/tools/clean_cache.sh:system/bin/clean_cache.sh
+#PRODUCT_COPY_FILES += \
+#    vendor/extras/build/tools/backuptool.sh:install/bin/backuptool.sh \
+#    vendor/extras/build/tools/backuptool.functions:install/bin/backuptool.functions \
+#    vendor/extras/build/tools/50-du.sh:system/addon.d/50-du.sh
 
 # Packages
 include vendor/du/config/packages.mk
@@ -76,10 +62,7 @@ include vendor/du/config/packages.mk
 include vendor/du/config/branding.mk
 
 # Bootanimation
-include vendor/du/config/bootanimation.mk
+#include vendor/du/config/bootanimation.mk
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
-
-# Google sounds
-include vendor/du/google/GoogleAudio.mk
