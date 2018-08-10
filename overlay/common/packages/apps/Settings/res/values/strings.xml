@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Security dialog -->
-    <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-07-01</string>
+    <string name="aosp_security_bulletin_url">https://source.android.com/security/bulletin/2018-08-01</string>
 
     <string name="lockscreen_clock_selection_analog_deadpool">Analog (deadpool)</string>
     <string name="lockscreen_clock_selection_analog_deepnight">Analog (deep night)</string>
