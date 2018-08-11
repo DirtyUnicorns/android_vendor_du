@@ -1,10 +1,8 @@
 supported_devices=(
-  'angler'
   'cheeseburger'
   'dragon'
   'dumpling'
   'flo'
-  'hammerhead'
   'marlin'
   'nash'
   'oneplus3'
