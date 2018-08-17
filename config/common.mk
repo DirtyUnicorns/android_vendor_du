@@ -50,10 +50,10 @@ PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
 # Backup Tool
-#PRODUCT_COPY_FILES += \
-#    vendor/extras/build/tools/backuptool.sh:install/bin/backuptool.sh \
-#    vendor/extras/build/tools/backuptool.functions:install/bin/backuptool.functions \
-#    vendor/extras/build/tools/50-du.sh:system/addon.d/50-du.sh
+PRODUCT_COPY_FILES += \
+    vendor/extras/build/tools/backuptool.sh:install/bin/backuptool.sh \
+    vendor/extras/build/tools/backuptool.functions:install/bin/backuptool.functions \
+    vendor/extras/build/tools/50-du.sh:system/addon.d/50-du.sh
 
 # Packages
 include vendor/du/config/packages.mk
