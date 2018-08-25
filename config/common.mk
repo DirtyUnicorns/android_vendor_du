@@ -61,6 +61,9 @@ include vendor/du/config/packages.mk
 # Branding
 include vendor/du/config/branding.mk
 
+# Themes
+include vendor/themes/common.mk
+
 # Bootanimation
 #include vendor/du/config/bootanimation.mk
 
