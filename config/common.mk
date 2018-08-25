@@ -67,5 +67,9 @@ include vendor/themes/common.mk
 # Bootanimation
 #include vendor/du/config/bootanimation.mk
 
+# Clean cache
+PRODUCT_COPY_FILES += \
+    vendor/extras/build/tools/clean_cache.sh:system/bin/clean_cache.sh
+
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
