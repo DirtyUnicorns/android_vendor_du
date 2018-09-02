@@ -27,4 +27,14 @@
     <!-- The duration for animating the task decorations in after transitioning from an app. -->
     <integer name="recents_task_enter_from_app_duration">0</integer>
 
+    <!-- The default tiles to display in QuickSettings -->
+    <string name="quick_settings_tiles_default" translatable="false">
+        wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,cast
+    </string>
+
+    <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
+    <string name="quick_settings_tiles_stock" translatable="false">
+        wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,cast,location,hotspot,inversion,saver,work,night
+    </string>
+
 </resources>
