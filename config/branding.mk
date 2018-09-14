@@ -5,6 +5,8 @@ ifndef DU_BUILD_TYPE
     DU_BUILD_TYPE := UNOFFICIAL
 endif
 
+TARGET_PRODUCT_SHORT := $(subst du_,,$(DU_BUILD_TYPE))
+
 # Only include DU-Updater for official, weeklies, and rc builds
 ifeq ($(filter-out OFFICIAL WEEKLIES RC,$(DU_BUILD_TYPE)),)
     PRODUCT_PACKAGES += \
@@ -20,8 +22,10 @@ endif
 DATE := $(shell date -u +%Y%m%d)
 DU_VERSION := $(TARGET_PRODUCT)-$(DU_BASE_VERSION)-$(DATE)-$(shell date -u +%H%M)-$(DU_BUILD_TYPE)
 TARGET_BACON_NAME := $(DU_VERSION)
+ROM_FINGERPRINT := DirtyUnicorns/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.du.version=$(DU_VERSION) \
-    ro.mod.version=$(DU_BUILD_TYPE)-$(DU_BASE_VERSION)-$(DATE)
+    ro.mod.version=$(DU_BUILD_TYPE)-$(DU_BASE_VERSION)-$(DATE) \
+    ro.du.fingerprint=$(ROM_FINGERPRINT)
