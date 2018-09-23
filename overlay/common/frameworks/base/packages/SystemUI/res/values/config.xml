@@ -41,7 +41,7 @@
 
     <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
     <string name="quick_settings_tiles_stock" translatable="false">
-        wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,cast,location,hotspot,inversion,saver,work,night,theme
+        wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,cast,location,hotspot,inversion,saver,work,night,nfc,theme
     </string>
 
     <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
