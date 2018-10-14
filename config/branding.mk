@@ -22,7 +22,7 @@ endif
 DATE := $(shell date -u +%Y%m%d)
 DU_VERSION := $(TARGET_PRODUCT)-$(DU_BASE_VERSION)-$(DATE)-$(shell date -u +%H%M)-$(DU_BUILD_TYPE)
 TARGET_BACON_NAME := $(DU_VERSION)
-ROM_FINGERPRINT := DirtyUnicorns/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date +%Y%m%d)
+ROM_FINGERPRINT := DirtyUnicorns/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date -u +%H%M)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
