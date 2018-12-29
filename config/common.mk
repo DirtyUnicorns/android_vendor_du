@@ -53,11 +53,16 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
-# Backup Tool
+# Backup tool
 PRODUCT_COPY_FILES += \
     vendor/extras/build/tools/backuptool.sh:install/bin/backuptool.sh \
     vendor/extras/build/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/extras/build/tools/50-du.sh:system/addon.d/50-du.sh
+
+# Weather client
+PRODUCT_COPY_FILES += \
+    vendor/du/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml \
+    vendor/du/etc/default-permissions/org.pixelexperience.weather.client.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml
 
 # Packages
 include vendor/du/config/packages.mk
@@ -67,9 +72,6 @@ include vendor/du/config/branding.mk
 
 # Themes
 include vendor/themes/common.mk
-
-# Weather
-include vendor/du/config/weather.mk
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
