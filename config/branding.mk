@@ -13,7 +13,7 @@ endif
 
 # Sign builds if building an official or weekly build
 ifeq ($(filter-out OFFICIAL WEEKLIES,$(DU_BUILD_TYPE)),)
-    PRODUCT_DEFAULT_DEV_CERTIFICATE := ../.keys/releasekey
+    PRODUCT_DEFAULT_DEV_CERTIFICATE := $(KEYS_LOCATION)
 endif
 
 # Set all versions
