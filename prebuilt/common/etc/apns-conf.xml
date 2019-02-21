@@ -6888,13 +6888,11 @@
       mcc="302"
       mnc="220"
       apn="sp.telus.com"
-      type="default,mms,supl,hipri,ia"
+      type="default,mms,supl"
       mmsc="http://aliasredirect.net/proxy/mmsc"
-      mmsproxy="mmscproxy.mobility.ca"
+      mmsproxy="74.49.0.18"
       mmsport="8799"
-      protocol="IPV6"
-      roaming_protocol="IP"
-      mvno_match_data="5455"
+      mvno_match_data="54"
       mvno_type="gid"
   />
 
