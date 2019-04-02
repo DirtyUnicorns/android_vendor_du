@@ -39,8 +39,8 @@ upstream=()
 failed=()
 
 # This is the array of repos to blacklist and not merge
-aosp_blacklist=()
-caf_blacklist=('hardware/qcom/*')
+aosp_blacklist=('external/google')
+caf_blacklist=('hardware/qcom/*' 'external/google')
 
 # Colors
 COLOR_RED='\033[0;31m'
