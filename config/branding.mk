@@ -1,5 +1,5 @@
 # Versioning System
-DU_BASE_VERSION = v13.4
+DU_BASE_VERSION = v13.5
 
 ifndef DU_BUILD_TYPE
     DU_BUILD_TYPE := UNOFFICIAL
