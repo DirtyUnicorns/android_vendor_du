@@ -60,9 +60,9 @@ PRODUCT_COPY_FILES += \
     vendor/extras/build/tools/50-du.sh:system/addon.d/50-du.sh
 
 # Weather client
-PRODUCT_COPY_FILES += \
-    vendor/du/prebuilt/common/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml \
-    vendor/du/prebuilt/common/etc/default-permissions/org.pixelexperience.weather.client.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml
+#PRODUCT_COPY_FILES += \
+#    vendor/du/prebuilt/common/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml \
+#    vendor/du/prebuilt/common/etc/default-permissions/org.pixelexperience.weather.client.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml
 
 # Packages
 include vendor/du/config/packages.mk
@@ -71,7 +71,7 @@ include vendor/du/config/packages.mk
 include vendor/du/config/branding.mk
 
 # Themes
-include vendor/themes/common.mk
+#include vendor/themes/common.mk
 
 # Overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
+#PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
