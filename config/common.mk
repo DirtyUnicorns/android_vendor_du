@@ -1,15 +1,15 @@
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.clientidbase=android-google
 else
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
 # General additions
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     keyguard.no_require_sim=true \
     dalvik.vm.debug.alloc=0 \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -25,7 +25,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.selinux=1
 
 # Allow tethering without provisioning app
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     net.tethering.noprovisioning=true
 
 PRODUCT_COPY_FILES += \
