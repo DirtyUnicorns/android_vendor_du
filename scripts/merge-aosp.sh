@@ -27,7 +27,7 @@ WORKING_DIR=$( cd $( dirname $( readlink -f "${BASH_SOURCE[0]}" ) )/../../.. && 
 BRANCH=android-${1}
 
 # Manifest branch
-DU_MANIFEST=p9x_default.xml
+DU_MANIFEST=q10x_default.xml
 
 # Google source url
 REPO=https://android.googlesource.com/platform/
