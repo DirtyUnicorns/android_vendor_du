@@ -36,10 +36,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/init.local.rc:system/etc/init/dirtyunicorns.rc
 
-# Don't export PS1 in /system/etc/mkshrc.
-PRODUCT_COPY_FILES += \
-    vendor/du/prebuilt/common/etc/mkshrc:system/etc/mkshrc
-
 # Backup tool
 PRODUCT_COPY_FILES += \
     vendor/extras/build/tools/backuptool.sh:install/bin/backuptool.sh \
