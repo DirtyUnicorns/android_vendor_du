@@ -81,8 +81,10 @@
     <!-- enable doze powersaving mode -->
     <bool name="config_enableAutoPowerModes">true</bool>
 
-    <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
-    <bool name="config_custom_swipe_up_gesture_setting_available">true</bool>
+    <!-- Whether or not swipe up gesture's opt-in setting is available on this device
+         TODO: Introduce back pixel3-gesture-swipe-up topic and switch to "custom" after new source
+         code drop -->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
 
     <!-- The duration in which a recent task is considered in session and should be visible. -->
     <integer name="config_activeTaskDurationHours">12</integer>
