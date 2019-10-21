@@ -19,4 +19,10 @@
     <!-- If the Storage Manager settings are enabled. -->
     <bool name="config_storage_manager_settings_enabled">true</bool>
 
+     <!-- Display additional System Update menu if true -->
+    <bool name="config_additional_system_update_setting_enable">false</bool>
+
+    <!-- Whether system_update_settings should be shown or not. -->
+    <bool name="config_show_system_update_settings">false</bool>
+
 </resources>
