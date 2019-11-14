@@ -1,5 +1,7 @@
 # Packages
 PRODUCT_PACKAGES += \
+    LatinIMEGooglePrebuilt \
+    SoundPickerPrebuilt \
     WallpaperPicker2
 #    CustomDoze \
 #    WeatherClient
