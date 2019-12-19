@@ -189,4 +189,11 @@
     <!-- Colon separated list of package names that should be granted DND access -->
     <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.gms:com.google.android.GoogleCamera:com.google.intelligence.sense:com.android.settings.intelligence</string>
 
+    <!-- The package name for the default wellbeing app.
+         This package must be trusted, as it has the permissions to control other applications
+         on the device.
+         Example: "com.android.wellbeing"
+     -->
+    <string name="config_defaultWellbeingPackage" translatable="false">com.google.android.apps.wellbeing</string>
+
 </resources>
