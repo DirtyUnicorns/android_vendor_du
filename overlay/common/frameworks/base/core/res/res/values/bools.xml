@@ -16,6 +16,6 @@
 
 <resources>
 
-    <bool name="config_alt_ambient_display">true</bool>
+    <!--bool name="config_alt_ambient_display">true</bool-->
 
 </resources>
