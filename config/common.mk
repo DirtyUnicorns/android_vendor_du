@@ -30,24 +30,15 @@ DU_PRODUCT_PROPERTIES += \
 DU_PRODUCT_PROPERTIES += \
     net.tethering.noprovisioning=true
 
-PRODUCT_COPY_FILES += \
-    vendor/du/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/du/prebuilt/common/bin/sysinit:system/bin/sysinit
-
 # Init files
 PRODUCT_COPY_FILES += \
-    vendor/du/prebuilt/common/etc/init.local.rc:system/etc/init/dirtyunicorns.rc
+    vendor/du/prebuilt/common/etc/dirtyunicorns.rc:system/etc/init/dirtyunicorns.rc
 
 # Backup tool
 PRODUCT_COPY_FILES += \
     vendor/extras/build/tools/backuptool.sh:install/bin/backuptool.sh \
     vendor/extras/build/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/extras/build/tools/50-du.sh:system/addon.d/50-du.sh
-
-# Weather client
-#PRODUCT_COPY_FILES += \
-#    vendor/du/prebuilt/common/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml \
-#    vendor/du/prebuilt/common/etc/default-permissions/org.pixelexperience.weather.client.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml
 
 # Packages
 include vendor/du/config/packages.mk
