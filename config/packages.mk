@@ -1,5 +1,6 @@
 # Packages
 PRODUCT_PACKAGES += \
+    DU-Themes \
     LatinIMEGooglePrebuilt \
     SoundPickerPrebuilt \
     WallpaperPicker2
