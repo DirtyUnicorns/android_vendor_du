@@ -34,6 +34,10 @@ DU_PRODUCT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/dirtyunicorns.rc:system/etc/init/dirtyunicorns.rc
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/du/prebuilt/common/etc/custom_permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/custom_permissions.xml
+
 # Backup tool
 PRODUCT_COPY_FILES += \
     vendor/extras/build/tools/backuptool.sh:install/bin/backuptool.sh \
