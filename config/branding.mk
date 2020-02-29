@@ -11,6 +11,12 @@ ifeq ($(filter-out OFFICIAL WEEKLIES RC,$(DU_BUILD_TYPE)),)
         DU-Updater
 endif
 
+# Only include DU Notifier for official and weeklies
+ifeq ($(filter-out OFFICIAL WEEKLIES,$(DU_BUILD_TYPE)),)
+    PRODUCT_PACKAGES += \
+        DuNotifierPrebuilt
+endif
+
 # Sign builds if building an official or weekly build
 ifeq ($(filter-out OFFICIAL WEEKLIES,$(DU_BUILD_TYPE)),)
     PRODUCT_DEFAULT_DEV_CERTIFICATE := $(KEYS_LOCATION)
