@@ -39,7 +39,7 @@ upstream=()
 failed=()
 
 # This is the array of repos to blacklist and not merge
-blacklist=('external/google')
+blacklist=('external/google' 'prebuilts/clang/host/linux-x86')
 
 # Colors
 COLOR_RED='\033[0;31m'
