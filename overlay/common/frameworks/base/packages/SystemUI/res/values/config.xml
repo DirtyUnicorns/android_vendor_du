@@ -31,16 +31,16 @@
     <!-- The duration for animating the task decorations in after transitioning from an app. -->
     <integer name="recents_task_enter_from_app_duration">0</integer>
 
-    <!-- The default tiles to display in QuickSettings -->
+    <!-- The default tiles to display in QuickSettings
     <string name="quick_settings_tiles_default" translatable="false">
         wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,cast
-    </string>
+    </string> -->
 
-    <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default" -->
+    <!-- Tiles native to System UI. Order should match "quick_settings_tiles_default"
     <string name="quick_settings_tiles_stock" translatable="false">
         wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,location,hotspot,inversion,saver,work,cast,
         night,theme,caffeine,adb_network,immersive,mono,nfc
-    </string>
+    </string> -->
 
     <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
     <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
