@@ -51,7 +51,7 @@ include vendor/du/config/packages.mk
 include vendor/du/config/branding.mk
 
 # Themes
-#include vendor/themes/common.mk
+include vendor/themes/common.mk
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += vendor/du/overlay/common
