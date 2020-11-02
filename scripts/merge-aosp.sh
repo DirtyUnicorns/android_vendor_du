@@ -39,7 +39,7 @@ upstream=()
 failed=()
 
 # This is the array of repos to blacklist and not merge
-blacklist=('external/google' 'prebuilts/clang/host/linux-x86')
+blacklist=('external/google' 'prebuilts/clang/host/linux-x86' 'prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9')
 
 # Colors
 COLOR_RED='\033[0;31m'
@@ -84,7 +84,7 @@ function delete_upstream() {
 }
 
 function force_sync() {
-  echo "Repo Syncing........."
+  echo "Repo Syncing..."
   sleep 10
   repo sync -c --force-sync >> /dev/null
   if [ $? -eq 0 ]; then
