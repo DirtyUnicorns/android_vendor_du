@@ -16,3 +16,8 @@ PRODUCT_COPY_FILES += \
 # SIM Toolkit
 PRODUCT_PACKAGES += \
     Stk
+
+# Wallet app for Power menu integration
+# https://source.android.com/devices/tech/connect/quick-access-wallet
+PRODUCT_PACKAGES += \
+    QuickAccessWallet
