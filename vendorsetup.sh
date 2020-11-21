@@ -1,4 +1,4 @@
-devices=('blueline' 'bonito' 'coral' 'crosshatch' 'lavender' 'potter' 'river' 'sunfish' 'taimen')
+devices=('blueline' 'bonito' 'coral' 'crosshatch' 'lake' 'lavender' 'potter' 'river' 'sunfish' 'taimen')
 
 function lunch_devices() {
     add_lunch_combo du_${device}-user
