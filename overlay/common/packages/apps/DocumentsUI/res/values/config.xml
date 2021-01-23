@@ -16,9 +16,16 @@
 
 <resources>
 
-    <bool name="show_documents_root">true</bool>
+    <!-- Intentionally unset. Vendors should set this in an overlay. -->
+    <string name="trusted_quick_viewer_package" translatable="false">com.google.android.apps.docs</string>
 
     <!-- Indicates if internal storage is shown as default or not. -->
     <bool name="config_default_show_device_root">true</bool>
+
+    <!-- The value is used in sorting process on Drawer menu. If the root's package name
+     start with it, the item will have higher order than others.-->
+    <string name="preferred_root_package" translatable="false">com.google.android</string>
+
+    <string name="default_root_uri" translatable="false">content://com.android.externalstorage.documents/root/primary</string>
 
 </resources>

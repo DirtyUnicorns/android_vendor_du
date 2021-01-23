@@ -17,7 +17,7 @@
  */
 -->
 <resources>
-    <string-array name="vendor_required_apps_managed_user">
+    <!--string-array name="vendor_required_apps_managed_user">
         <item>com.android.vending</item>
         <item>com.google.android.gms</item>
         <item>com.google.android.contacts</item>
@@ -26,5 +26,5 @@
         <item>com.android.launcher</item>
         <item>com.google.android.dialer</item>
         <item>com.google.android.apps.messaging</item>
-    </string-array>
+    </string-array-->
 </resources>
