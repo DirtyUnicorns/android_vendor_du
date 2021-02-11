@@ -56,3 +56,4 @@ include vendor/themes/common.mk
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += vendor/du/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/du/overlay/common
